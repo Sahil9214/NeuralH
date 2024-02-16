@@ -15,11 +15,9 @@ function App() {
   return (
     <div className="App">
       <div className="main">
-        <div className="container">
-          <h1 className={`coming-soon ${showBorder ? "bordered" : ""}`}>
-            Coming Soon
-          </h1>
-        </div>
+        <h1 className={`coming-soon ${showBorder ? "bordered" : ""}`}>
+          Coming Soon
+        </h1>
       </div>
     </div>
   );
