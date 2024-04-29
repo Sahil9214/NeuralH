@@ -9,10 +9,10 @@ const Home = () => {
   return (
     <>
       <Introduction />
-      {/* <AboutUsComponent />
+      <AboutUsComponent />
       <GenerativeAi />
       <OurService />
-      <CaseStudy /> */}
+      <CaseStudy />
     </>
   );
 };

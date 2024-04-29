@@ -50,12 +50,7 @@ const AboutUsComponent = () => {
     });
   }, []);
   return (
-    <div
-      className="aboutus_container"
-      id="about"
-      data-aos="fade-up"
-      data-aos-anchor-placement="center-bottom"
-    >
+    <div className="aboutus_container" id="about">
       <div className="animation">
         <div className="aboutus_inner_container">
           <p className="aboutus">{Constant.ABOUT_US}</p>
