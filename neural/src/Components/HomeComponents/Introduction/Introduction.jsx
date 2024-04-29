@@ -76,16 +76,11 @@ const Introduction = ({ scrollToAbout }) => {
       {/* //For image */}
       {screenSize < 768 ? (
         <div className="introduction_img">
-          <img alt="ai-img" loading="lazy" src={file2} data-aos="fade-out" />
+          <img alt="ai-img" loading="lazy" src={file2} />
         </div>
       ) : (
         <div className="introduction_img">
-          <img
-            alt="ai-img"
-            loading="lazy"
-            src={IntroductionImage}
-            data-aos="zoom-in"
-          />
+          <img alt="ai-img" loading="lazy" src={IntroductionImage} />
         </div>
       )}
     </div>
