@@ -43,6 +43,7 @@
     text-align: left;
     color:#ACC2EE;
     margin-top: 20px;
+    height: 70px;
 }
 .about_us_know_more{
     width: 250px;
@@ -116,40 +117,49 @@
     
 }
 @media screen and (max-width:767px) and (min-width:320px) {
-    .aboutus_context_description{
-        font-family: Lato;
-        font-size: 32px;
-        font-weight: 400;
-        line-height:38.4px;
-        text-align: left;
-        color:#CEE7FE
-    
-    }
-    .aboutus{
-        font-family: Lato;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 21.6px;
-        text-align: left;
-        ;
+    .aboutus_container{
+        padding:80px 0px ;
+        height: 100vh;
     }
     .aboutus_inner_container{
         width:90%;
         margin:auto;
+        height: auto;
+        
     }
     
+    .aboutus{
+        font-family: Lato;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 21.6px;
+        
+    }
+    
+    .aboutus_context_description{
+        font-family: Lato;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height:42px;
+        text-align: left;
+        color:#CEE7FE;
+        margin-top: 16px;
+    
+    }
     .aboutus_our_team_description{
-        font-size: 16px;
+        font-size: 1rem;
         line-height:18.91px;
         color:#ACC2EE;
         font-family: Banumans;
         font-weight: 400;
     }
+   
     .about_us_know_more{
         width: 160px;
         height: 0px;
         padding: 20px 30px;
     }
+
     .aboutus_container{
         padding: 50px 10px;
     }
