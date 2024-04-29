@@ -46,7 +46,7 @@ const CaseStudy = () => {
               >
                 <p className="case_study_study_name">{study.case_study_name}</p>
                 <svg
-                  style={{ marginRight: "20px" }}
+                  className="case_study_svg_file"
                   width="40"
                   height="40"
                   viewBox="0 0 60 60"

@@ -46,7 +46,9 @@
 .svg_case_study{
     padding: 0px 30px;
 }
-
+.case_study_svg_file{
+    margin-right: 20px;
+}
 
 
 @media screen and (max-width:1124px) and (min-width:768px){
@@ -78,7 +80,7 @@
       
     }
     .case_study_inner_containers{
-        flex-direction: column;
+       
     
         align-items: center; /* Center vertically */
         padding: 10px 0px;
@@ -86,7 +88,7 @@
     }
     .case_study_study_name{
         font-family: Lato;
-        font-size: 20px;
+        font-size: 19px;
         font-weight: 400;
         line-height: 38px;
         text-align: left;
@@ -94,6 +96,10 @@
         padding: 0px 30px;
         text-align: center;
     }
+    .case_study_svg_file{
+        margin-right: 10px;
+    }
+    
 }
 @media screen and (max-width:320px) {
     .case_study_container{

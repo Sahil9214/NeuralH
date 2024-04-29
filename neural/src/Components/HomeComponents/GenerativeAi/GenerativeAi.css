@@ -217,7 +217,7 @@ color:#4D658D;
   
   .generative_ai{
     width: 95%;
-    border: 2px solid green;
+    
   }
 
   .our_solutions_context{
@@ -236,7 +236,7 @@ color:#4D658D;
     
     height:150px;
     letter-spacing: .45px;
-
+   border: 2px solid red;
   
   }
   .generative_description{
