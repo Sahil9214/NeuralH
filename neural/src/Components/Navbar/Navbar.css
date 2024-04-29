@@ -22,7 +22,9 @@
   width: 211px;
   height: 62px;
 }
-
+.menu-toggle.open{
+  border: 5px solid green;
+}
 .logo {
   font-size: 24px;
   width: 60px;
@@ -228,7 +230,7 @@
   }
   .navbar_logo {
     width: 120px;
-    height: 30px;
+  height: auto;
     margin-left: -55px;
   }
 }
