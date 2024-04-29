@@ -1,28 +1,32 @@
 import React, { useEffect, useState } from "react";
 
 import Constant from "../../../Utils/Constant";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./AboutUsComponent.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const AboutUsComponent = () => {
-  const [text, setText] = useState("");
   const fullText = Constant.ABOUT_US_OUR_TEAM;
+  const [text, setText] = useState("");
+  const location = useLocation();
 
   useEffect(() => {
-    let currentIndex = 0;
-    const typingInterval = setInterval(() => {
-      if (currentIndex <= fullText.length) {
-        setText(fullText.substring(0, currentIndex));
-        currentIndex++;
-      } else {
-        clearInterval(typingInterval);
-      }
-    }, 50); // Adjust the interval to control typing speed
+    if (location.pathname === "/about") {
+      let currentIndex = 0;
+      const typingInterval = setInterval(() => {
+        if (currentIndex <= fullText.length) {
+          setText(fullText.substring(0, currentIndex));
+          currentIndex++;
+        } else {
+          clearInterval(typingInterval);
+        }
+      }, 50); // Adjust the interval to control typing speed
 
-    return () => clearInterval(typingInterval);
-  }, [fullText]);
+      return () => clearInterval(typingInterval);
+    }
+  }, [location.pathname, fullText]);
+
   useEffect(() => {
     AOS.init();
 

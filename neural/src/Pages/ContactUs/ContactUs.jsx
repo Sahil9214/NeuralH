@@ -38,11 +38,7 @@ const ContactUs = () => {
   }, []);
   return (
     <>
-      <div
-        id="#contact"
-        data-aos="fade-up"
-        data-aos-anchor-placement="bottom-bottom"
-      >
+      <div>
         <div className="animation" data-aos="zoom-in">
           <div className="contact_us_container">
             <div className="input_box_contact_area">
