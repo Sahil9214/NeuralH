@@ -1,0 +1,197 @@
+.aboutus_container{
+    height:100vh;
+    background: linear-gradient(90deg, #203B60 0%, #4C648B 100%);
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.aboutus_inner_container{
+  
+    width:60%;
+    margin:auto;
+   
+}
+
+
+
+
+.aboutus{
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 72px;
+    text-align: left;
+    color:#ACC2EE
+    
+}
+.aboutus_context_description{
+    font-family: Lato;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    color:#CEE7FE
+
+}
+.aboutus_our_team_description{
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    color:#ACC2EE;
+    margin-top: 20px;
+}
+.about_us_know_more{
+    width: 250px;
+    height: 60px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+  
+    border: 1px solid #ACC2EE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border-radius 0.7s ease;
+    cursor: pointer;
+    margin-top: 20px;
+    color:#ACC2EE;
+    margin-top: 20px;
+    
+}
+.about_us_know_more_text {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: center; /* Text alignment declared once */
+    color: #ACC2EE;
+ 
+}
+
+.about_us_know_more:hover {
+    border-radius: 0px 72px 0px 72px;
+}
+
+@media screen and (max-width:1124px) and (min-width:768px) {
+    .aboutus_inner_container{
+        width: 90%;
+        margin: auto;
+    }
+    .aboutus_context_description{
+        font-family: Lato;
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 72px;
+        text-align: left;
+        color:#CEE7FE
+    
+    }
+    .about_us_know_more{
+        width: 60%;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        border: 1px solid #ACC2EE;
+        opacity: 0px;margin-top: 20px;
+        
+    }
+    .about_us_know_more_text {
+        font-family: Lato;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center; /* Text alignment declared once */
+        color: #ACC2EE;
+        transition: border-radius 0.3s ease;
+    }
+    .aboutus_our_team_description{
+        font-size: 32px;
+        line-height: 52px;
+    }
+    
+}
+@media screen and (max-width:767px) and (min-width:320px) {
+    .aboutus_context_description{
+        font-family: Lato;
+        font-size: 32px;
+        font-weight: 400;
+        line-height:38.4px;
+        text-align: left;
+        color:#CEE7FE
+    
+    }
+    .aboutus{
+        font-family: Lato;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;
+        text-align: left;
+        ;
+    }
+    .aboutus_inner_container{
+        width:90%;
+        margin:auto;
+    }
+    
+    .aboutus_our_team_description{
+        font-size: 16px;
+        line-height:18.91px;
+        color:#ACC2EE;
+        font-family: Banumans;
+        font-weight: 400;
+    }
+    .about_us_know_more{
+        width: 160px;
+        height: 0px;
+        padding: 20px 30px;
+    }
+    .aboutus_container{
+        padding: 50px 10px;
+    }
+    .about_us_know_more_text{
+        font-size: 16px;
+    }
+
+}
+@media screen and (max-width:320px){
+
+    .aboutus_context_description{
+        font-family: Lato;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 40px;
+        text-align: left;
+        color:#CEE7FE;
+      
+    
+    }
+    .aboutus_inner_container{
+  
+        width:90%;
+        margin:auto;
+        
+       
+    }
+    
+    .aboutus_our_team_description{
+        font-size: 19px;
+        line-height: 32px;
+    }
+    .about_us_know_more{
+        width: 160px;
+        height: 0px;
+        padding: 20px 30px;
+    }
+    .aboutus_container{
+        padding: 50px 10px;
+    }
+    .about_us_know_more_text{
+        font-size: 16px;
+    }
+
+}

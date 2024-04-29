@@ -1,0 +1,272 @@
+
+
+
+.generativeai_container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center horizontally */
+  justify-content: space-between; /* Center vertically */
+  /* padding: 50px 40px; */
+  height: 100vh;
+  
+
+
+  
+}
+.generative_ai_container{
+  width:50%;
+  margin-left: 50px;
+
+  
+
+
+  
+ }
+.generative_ai{
+font-family: Lato;
+font-size: 24px;
+font-weight: 400;
+line-height: 72px;
+text-align: left;
+color:#4D658D;
+
+}
+.our_solutions_context{
+  font-size: 60px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 72px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  margin-top: -50px;
+ 
+ /* Add margin bottom to create space between text */
+  color:#1E3A5F
+
+}
+
+.generative_description{
+  
+  font-size:24px;
+  font-weight: 400;
+  line-height: 38px;
+  text-align: left;
+  color: #374357; /* Add margin bottom to create space between text */
+  width:90%;
+  font-family: Baumans,"sans-sarif";
+  font-weight: 400;
+}
+.generative_img {
+  height: 100vh;
+  width: 48%;
+  position: relative;
+  overflow: hidden;
+  
+
+  object-fit: cover;
+ 
+
+  
+}
+
+ .generative_img_inside_first_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .6;
+}
+
+.generative_img .generative_img_inside_second_img {
+ height: 400px;
+ width: 500px;
+
+  position: absolute;
+  bottom:15%; /* Adjust the distance from the bottom as needed */
+  right: 18%; /* Adjust the distance from the right as needed */
+ 
+}
+
+
+
+
+
+.generative_contact_us{
+  width: 250px;
+  height: 60px;
+
+  gap: 0px;
+  border: 1px 0px 0px 0px;
+ 
+  border:1px solid #0F1C2E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-radius 0.7s ease;
+  cursor: pointer;
+  text-decoration: none;
+  list-style: none;
+  margin-top: 20px;
+}
+.generative_us_text{
+  text-align: center;
+  text-decoration: none!important;
+  list-style: none!important;
+  color:#0F1C2E;
+  font-size: 18px;
+  font-weight: 400;
+
+}
+.generative_contact_us:hover{
+  border-radius: 72px 0px 72px 0px;
+}
+
+@media screen and (max-width:1124px) and (min-width:768px){
+  .generativeai_container{
+    margin: auto;
+    flex-direction:column-reverse ;
+    justify-content: space-between;
+    padding: 50px 20px;
+    margin-top: 6%;
+   
+    
+  
+  
+  }
+
+  .generative_ai_container{
+    width:90%;
+    margin: auto;
+   
+  }
+  .our_solutions_context{
+    text-align: left;
+    font-size:40px;
+  }
+  .generative_description{
+    text-align: center;
+   
+    font-family: Lato, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: left;
+    
+    color: #374357;
+  }
+  .generative_contact_us{
+    width: 60%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ACC2EE;
+    
+    margin-top: 20px;
+  }
+  .generative_img{
+    height: 500px;
+    width:80%;
+    margin:auto
+    
+
+  }
+  .generative_img img{
+    width: 100%; /* Adjust image width */
+    margin: auto;
+    margin-top: 20px;
+  }
+  .generative_ai{
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 72px;
+    text-align: left;
+    color: #ACC2EE;
+    text-align: left;
+  }
+}
+@media screen and (max-width:767px){
+  .generativeai_container{
+    margin: auto;
+    flex-direction:column-reverse ;
+    justify-content: center;
+   
+    height:100%;
+    padding: 0px 0px 80px 0px;
+    }
+  .generative_ai_container{
+    width: 90%;
+    margin: auto;
+   
+    height: auto;
+    
+    
+  }
+  .generative_img{
+    width: 100%;
+    height: 30%;
+   
+  }
+ .generative_img_inside_second_img_mobile_views{
+  width: 100%;
+  
+  object-fit: contain;
+ }
+
+  
+  .generative_ai{
+    width: 95%;
+    border: 2px solid green;
+  }
+
+  .our_solutions_context{
+    font-size: 21px;
+    line-height: 38.4;
+    
+    height:40px
+  }
+  .our_solutions_context{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 38.4px;
+    text-align: left;
+    color:#1E3A5F;
+    margin-top: 10px;
+    
+    height:150px;
+    letter-spacing: .45px;
+
+  
+  }
+  .generative_description{
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 18.91px;
+    
+    width: 100%;
+  }
+
+
+.generative_contact_us{
+width: 160px;
+height: 40px;
+
+gap: 0px;
+border: 1px 0px 0px 0px;
+
+margin-top: -10px;
+
+}
+
+.generative_us_text{
+  text-align: center;
+  text-decoration: none!important;
+  list-style: none!important;
+  color:#0F1C2E;
+  font-size: 15px;
+  font-weight: 400;
+
+}
+
+}

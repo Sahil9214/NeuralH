@@ -1,0 +1,270 @@
+.contact_us_container{
+    display: flex;
+    padding: 40px 70px;
+    justify-content: space-between;
+    
+    margin-top: 60px;
+
+   
+}
+.input_box_contact_area {
+    text-align: center; /* Center text horizontally */
+  }
+.contact_us_heading{
+font-family: Lato;
+font-size: 24px;
+font-weight: 400;
+line-height: 28.8px;
+text-align: left;
+color:#4D658D
+}
+input{
+width: 400px;
+height: 30px;
+
+gap: 0px;
+border:1px solid #374357;
+margin-top: 15px;
+
+
+}
+textarea{
+
+width: 400px;
+height: 200px;
+top: 644px;
+left: 120px;
+
+
+font-size: 16px;
+border:1px solid #374357;
+
+}
+::placeholder {
+    color: #e0e0e0; /* Placeholder text color */
+    text-indent: 20px; /* Adjusted indentation */
+    font-size: 14px; /* Adjusted font size */
+  }
+input::placeholder,
+textarea::placeholder {
+  color: #E0E0E0; /* Placeholder text color */
+ 
+  text-indent: 20px; 
+
+}
+textarea::placeholder{
+    font-size: 18px;
+}
+
+
+.btn_contact_us{
+width: 200px;
+height: 40px;
+margin:0px;
+
+
+
+
+background-color: #FFFFFF;
+border:1px solid #0F1C2E;
+cursor:pointer;
+margin-left: -50%;
+
+}
+.address{
+    text-align: right;
+    margin-top: 4px;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 14px;
+}
+.embeded_map{
+    width:600px;
+    height:280px
+}
+.contact_us_address_map{
+    height:400px;
+    
+}
+.mobile_number_contact_us{
+    text-align: right;
+}
+
+@media screen and (max-width:1124px ) and (min-width:768px){
+    .contact_us_container{
+    flex-direction: column;
+    padding: 40px 30px;
+    justify-content: space-between;
+    
+       
+    } 
+    input{
+    width: 80%;
+    height: 30px;
+    top: 344px;
+    left: 120px;
+    gap: 0px;
+    
+   
+    margin-top: 20px;   
+    border:1px solid #374357;
+    
+    
+    }
+    textarea{
+    margin-top: 20px;
+    width: 80%;
+    height: 200px;
+    top: 644px;
+    left: 120px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+   
+    
+    }
+    .embeded_map{
+        width:90%;
+        height:240px;
+        margin: auto;
+    }
+    .address{
+        text-align: left;
+        font-size: 18px;
+        font-family: Lato;
+    }
+    .mobile_number_contact_us{
+        text-align: left;
+    }
+    .contact_us_container {
+        flex-direction: column;
+        padding: 40px 30px;
+        justify-content: space-between;
+    }
+
+    .input_box_contact_area {
+        text-align: center; /* Center text horizontally */
+    }
+
+    .btn_contact_us {
+        width: 200px;
+        height: 40px;
+        margin: 20px auto; /* Center the button horizontally */
+        background-color: #FFFFFF;
+        border:1px solid #0F1C2E;
+        cursor:pointer;
+    }
+}
+@media screen and (max-width:768px ) and (min-width:320px){
+    .contact_us_container{
+        flex-direction: column;
+        padding: 60px 30px;
+        justify-content: space-between;
+      } 
+    input{
+        width: 90%;
+        margin: auto;
+        height: 30px;
+        margin: auto;
+        gap: 0px;
+        border: 1px 0px 0px 0px;
+       
+        margin-top: 20px;
+        border:1px solid #374357
+        
+        }
+    textarea{
+        margin-top: 20px;
+        width: 90%;
+        height: 200px;
+        top: 644px;
+        left: 120px;
+        gap: 0px;
+        border:1px solid #374357;
+       
+        
+        }
+    .embeded_map{
+            width:90%;
+            height:250px!important;
+            margin: auto;
+        }
+    .address{
+            text-align: left;
+        }
+    .mobile_number_contact_us{
+            text-align: left;
+        }
+        .input_box_contact_area{
+            margin-top: 40px;
+    
+           
+        }
+    .contact_us_heading{
+        margin-left: 10px;
+    }
+        .contact_us_address_map{
+            margin: auto;
+            
+            width:100%;
+            margin-top: 30px;
+            
+        }
+    
+}
+@media screen and (max-width:320px ) {
+    .contact_us_container{
+        flex-direction: column;
+        padding: 60px 30px;
+        justify-content: space-between;
+        
+    
+       
+    } 
+    input{
+        width: 90%;
+        margin: auto;
+        height: 30px;
+        margin: auto;
+        gap: 0px;
+        border: 1px 0px 0px 0px;
+       
+        margin-top: 20px;
+        border:1px solid #374357
+        
+        }
+        textarea{
+        margin-top: 20px;
+        width: 90%;
+        height: 200px;
+        top: 644px;
+        left: 120px;
+        gap: 0px;
+        border:1px solid #374357;
+       
+        
+        }
+        .embeded_map{
+            width:90%;
+            height:250px!important;
+            margin: auto;
+        }
+        .address{
+            text-align: left;
+        }
+        .mobile_number_contact_us{
+            text-align: left;
+        }
+        .input_box_contact_area{
+            margin-top: 40px;
+           
+        }
+   
+        .contact_us_address_map{
+            margin: auto;
+            
+            width:100%;
+            margin-top: 30px;
+            
+        }
+    
+}

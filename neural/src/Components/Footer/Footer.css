@@ -1,0 +1,204 @@
+.Footers_Box_Description{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.footer_container{
+    height: 35%;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background: linear-gradient(90deg, #203B60 0%, #4C648B 100%);
+
+}
+.footer_links_Logo{
+   justify-content: center;
+}
+.footer-logo-new{
+    padding: 20px 0px;
+    height: 134.8px;
+    width: 194.8px;
+}
+.footer_links_mainContainer{
+    display: flex;
+    justify-content: space-between;
+
+    width:55%;
+    
+    margin-right: 30px;
+}
+.footer_links_container{
+    display: flex;
+    
+     justify-content: space-around;
+     width:60%;
+    
+   
+}
+.footerlinks_components{
+    margin-top: 20px;
+}
+.footer_social_media{
+    width: 48px;
+    height: 48px;
+}
+.links_or_footer{
+    font-size: 24px;
+    line-height: 24px;
+}
+.follow_us_social_media_platform{
+  width: 150px;
+  align-items: center;
+  
+}
+.Follow_us_on{
+    font-size: 24px;
+    line-height: 24px;
+}
+.footer_logos{
+    display: flex;
+    justify-content: space-around;
+    
+}
+@media screen and (max-width:1124px) and (min-width:768px)  {
+    .footer_container{
+        flex-direction: column;
+      
+    }
+    .Footers_Box_Description {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer_links_Logo,
+    .footer_links_mainContainer,
+    .footer_links_container {
+        width: 100%; /* Set width to 100% to make elements take full width */
+        margin-right: 0; /* Remove right margin */
+        
+        justify-content: space-between;
+      
+    }
+
+    .footer_links_mainContainer {
+        flex-direction: column; 
+       /* Change flex direction to column for main container */
+    }
+
+    .footer_links_container {
+        margin-top: 20px; /* Add margin-top to separate link containers */
+       
+    }
+    .follow_us_social_media_platform{
+        
+        width: 150px;
+    }
+    .Follow_us_on{
+        font-size: 24px;
+    }
+    .footer_logos{
+     width: 90%;
+     
+    }
+    .footer_social_media{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media screen and (max-width:767px)  {
+    .footer_container{
+        height: 100%!important;
+       
+       
+        display: flex;
+        flex-direction: column;
+        padding: 25px 48px;
+        
+        background: linear-gradient(90deg, #203B60 0%, #4C648B 100%);
+    }
+    .footer_logos{
+        width:100px!important;
+      
+    }
+    
+    .footer-logo-new{
+        padding: 20px 0px;
+        height: 134.8px;
+        width: 93px;
+    }
+   
+    .footer_links_mainContainer{
+        margin-top: 22%;
+        height: 400px;
+        width: 100%;
+       
+    }
+    
+    .footer_links_container {
+        width: 100%; 
+        
+        justify-content:space-between ;
+        /* Set width to 100% to make elements take full width */
+    }
+    .follow_us_social_media_platform{
+        height: 100%
+       
+    }
+    .footer_links_Logo{
+        width: 200px;
+        height: 100px;
+       
+        margin: auto;
+    }
+    .footer-logo-new{
+       
+        width: 100%;
+    }
+    .footer_links_mainContainer {
+        flex-direction: column;
+       
+    }
+
+    .footer_links_container {
+        margin-top: 20px; /* Add margin-top to separate link containers */
+        
+    }
+    .footer_social_media{
+        width:40px;
+        height:40px
+    }
+   
+    
+     .footer_components{
+        margin-top: 20px;
+     }
+     .follow_us_social_media_platform{
+       display: flex;
+       width: 100%;
+      
+    
+       
+       
+     }
+       .footerlinks_components{
+         margin-top: 40px;
+        
+         
+         
+        
+       }
+      .Follow_us_on{
+        font-size: 16px;
+        line-height: 18.91px;
+        
+      }
+      .links_or_footer{
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'Baumans';
+        font-weight: 400;
+        font-style: normal;
+      }
+     
+}
