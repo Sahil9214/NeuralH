@@ -2,69 +2,82 @@ import Constant from "./Constant";
 
 export const Owner = [
   {
-    teamMember: Constant.TEAM_MEMBER1,
+    teamMember: Constant.Owner_Name1,
     Designation: Constant.SANDEEP_DESIGNATION,
     Linkedin: "https://www.linkedin.com/in/sandeep-gupta-847b4150/",
-    img: "https://media.licdn.com/dms/image/C4E03AQHGhn6sXaDtzA/profile-displayphoto-shrink_800_800/0/1550745318375?e=1718841600&v=beta&t=BlzVPr0d6ZHz2JapsUHOV-ih-k83Y5LIhHl4jVIQTzM",
-    effect: "zoom-in-down",
+    img: "https://github.com/Sahil9214/random-repo/assets/106021674/23b25c24-bac7-4b50-b5fa-814c034086eb",
+    effect: "zoom-out",
   },
   {
-    teamMember: Constant.TEAM_MEMBER2,
+    teamMember: Constant.Owner_Name2,
     Designation: Constant.AMRIT_DESIGNATION,
     Linkedin: "https://www.linkedin.com/in/amrit-anand-51550315/",
     img: "https://media.licdn.com/dms/image/C5603AQEkDdOmqHkVbQ/profile-displayphoto-shrink_800_800/0/1660749708216?e=1718841600&v=beta&t=1zhj7cTFsuOQuE0HzVdQLePvkE9h69lAaoVZcIDGLos",
-    effect: "zoom-in-up",
+    effect: "zoom-out",
   },
   {
-    teamMember: Constant.TEAM_MEMBER3,
+    teamMember: Constant.Owner_Name3,
     Designation: Constant.MOSHIN_HASAN_KHAN_DESIGNATION,
     Linkedin: "https://www.linkedin.com/in/mohsin-hasan-khan-167167a9/",
-    img: "https://media.licdn.com/dms/image/C5103AQHoRathFqIG_A/profile-displayphoto-shrink_400_400/0/1561343764130?e=1718841600&v=beta&t=l165VowG_PhXtwvgLRkZIvStckn48AqFSZqHmF1Xt9M",
-    effect: "zoom-in-right",
+    img: "https://github.com/Sahil9214/random-repo/assets/106021674/f2b511a7-ffdd-4db1-833f-e46408ea8336",
+    effect: "zoom-out",
+  },
+  {
+    teamMember: Constant.Owner_Name4,
+    Designation: Constant.PRASANNA_KAKHANDAKI_DESIGNATION,
+    Linkedin: "https://www.linkedin.com/in/prasannapk/",
+    img: "https://media.licdn.com/dms/image/D5603AQFNEFYFmh7LLg/profile-displayphoto-shrink_800_800/0/1686716285921?e=1720051200&v=beta&t=OdrueRGKd2c42nyOGQrrbuU6qeVz3wIjty0gdMqrbYY",
+    effect: "zoom-out",
   },
 ];
 
 export const Employees = [
   {
-    teamMember: Constant.TEAM_MEMBER4,
+    //!Jhanvi Container
+    teamMember: Constant.TEAM_MEMBER1,
     Designation: Constant.EMPLOYEE_NAME1_DESIGNATION,
-    Linkedin: "https://www.linkedin.com/in/utkarsh-singhal-3171b7182",
-    img: "https://github.com/Sahil9214/random-repo/assets/106021674/e6b27d43-1b00-4310-9c43-5cd9efa6f5a8",
-    effect: "zoom-out-up",
+    Linkedin: "https://www.linkedin.com/in/janhavi023/",
+    img: "https://github.com/Sahil9214/random-repo/assets/106021674/bfd092e5-0ffa-439e-80a3-830165ae5020",
+    // effect: "zoom-out",
   },
   {
-    teamMember: Constant.TEAM_MEMBER5,
+    //!Revanth Container
+    teamMember: Constant.TEAM_MEMBER2,
     Designation: Constant.EMPLOYEE_NAME2_DESIGNATION,
+    Linkedin: "https://www.linkedin.com/in/revanth-mk-1a9013157/",
+    img: "https://github.com/Sahil9214/random-repo/assets/106021674/7b6e6209-7330-4a61-a1f2-0a9a18290920",
+    // effect: "zoom-out",
+  },
+  {
+    //!Rushikesh Container
+    teamMember: Constant.TEAM_MEMBER3,
+    Designation: Constant.EMPLOYEE_NAME3_DESIGNATION,
     Linkedin: "https://www.linkedin.com/in/rushikesh-bhomale-aa29a3158/",
     img: "https://media.licdn.com/dms/image/D4D03AQEiUwyJSdTN3w/profile-displayphoto-shrink_400_400/0/1700584106803?e=1719446400&v=beta&t=YwxCmLAHGFls_9Kqu6o88FivFmAdt9elWaUV-C52QCI",
-    effect: "zoom-out",
+    // effect: "zoom-out",
   },
+  {
+    //!Utkarsh Container
+    teamMember: Constant.TEAM_MEMBER4,
+    Designation: Constant.EMPLOYEE_NAME4_DESIGNATION,
+    Linkedin: "https://www.linkedin.com/in/utkarsh-singhal-3171b7182/",
+    img: "https://github.com/Sahil9214/random-repo/assets/106021674/b9473005-bf19-47d3-9902-c82dbf7a4044",
+    // effect: "zoom-out",
+  },
+  //!Deependra
   {
     teamMember: Constant.TEAM_MEMBER6,
-    Designation: Constant.EMPLOYEE_NAME3_DESIGNATION,
-    Linkedin: "",
-    img: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQArAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAUBAgMGB//EACwQAQACAQIFAwMDBQAAAAAAAAABAgMEEQUhMUFREhNhIlJxMpHBQmKBobH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A+iAAAAAAAADMRMztEbz4hn27+qKzS0TPSNuoNROxcNvaInLeKeIiN5b34Zy+nLO/zAK4ds2my4I3vXePurzhxAAAAAAAkgkgAAAAAAGXfSaa2omZ6UjrKOvNLT29PSvfbeZ+ZBthw48NfTjrtHnvLowAAAIeq0FMm9sX03jt2smAPP2rNbTW0bTHWGE/iuP6qZI/q5SgAAAAASQSQAAAAAADMdYegiNoiIef6L7HaMmOt46TG4NgAAAAAQ+KRvpo8xaP5VUdFpxa8RhpXvNt1XEbAAAAASQSQAAAAAADNaza0VjrM7Qu9LithwxS1vVt05dFPp7RTUY7f3RuvQAAAAAAVnFYv70TNZikRtE+fKDC14rO2nrHm6qjoAAAABJBJAAAAAAAGy50meMuDHNrR6/0zHeZUzfFf28tMkdazuC+CJiYiY7gAAAI3Ecvo08xHKb8oBE4pk9WauP7I5/lCZ77z1YAAAAAkgkgAAAAAAAkJBbcNy+5g9M9acv8JaFwmu2C8+bJoAACl1mec+ae1a8ohdKHLE1y3ie1pgGgAAAAAEkEkAAAAADalLXtEUrNp+IS8fDstud7RSP3kEJ30+lyZ+n0072lY4dDhxc53vbzZJ7bdgaYccYsdaR2bgAAAg63RTkt7mKfqnrXynAPP3rak+m8TEx5YhfZcOPLG2SkWQsnDI64r7fFgVw75tJmxfqrvHmvNw3AAAkgkgAGYibWitesztAN8OC+e/pxxvt1ntCww8Ox155Z9fxHKEnBhrhx1pWI5dZ8ugMVpWldqViv4jZkAAAAAAAAAAAHHNpMObnam1vurydgFVm4fkxxM459cR8c0N6FWcTwRS8Zaxyt+r8ggyQSQAlcOx+vUxPasbosrLhVNqXv5nYE/qAAAAAAAAAAAAAAAA46ynuaW9fEb/s7ExvG09AeenoQzlr6Mlq+JmGIAnpK54fG2kp87/8AQBIAAAAAAAAAAAAAAAAZYAUvEY21l4j4n/ThAA//2Q==",
-    effect: "zoom-out-down",
+    Designation: Constant.TEAM_MEMBER6,
+    Linkedin: "https://www.linkedin.com/in/deependrakrdk/",
+    img: "https://github.com/Sahil9214/random-repo/assets/106021674/0ee088bc-0c57-430e-b67b-ce0c9e5e63a7",
+    // effect: "zoom-out",
   },
   {
-    teamMember: Constant.TEAM_MEMBER7,
-    Designation: Constant.EMPLOYEE_NAME4_DESIGNATION,
-    Linkedin: "",
-    img: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQArAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAUBAgMGB//EACwQAQACAQIFAwMDBQAAAAAAAAABAgMEEQUhMUFREhNhIlJxMpHBQmKBobH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A+iAAAAAAAADMRMztEbz4hn27+qKzS0TPSNuoNROxcNvaInLeKeIiN5b34Zy+nLO/zAK4ds2my4I3vXePurzhxAAAAAAAkgkgAAAAAAGXfSaa2omZ6UjrKOvNLT29PSvfbeZ+ZBthw48NfTjrtHnvLowAAAIeq0FMm9sX03jt2smAPP2rNbTW0bTHWGE/iuP6qZI/q5SgAAAAASQSQAAAAAADMdYegiNoiIef6L7HaMmOt46TG4NgAAAAAQ+KRvpo8xaP5VUdFpxa8RhpXvNt1XEbAAAAASQSQAAAAAADNaza0VjrM7Qu9LithwxS1vVt05dFPp7RTUY7f3RuvQAAAAAAVnFYv70TNZikRtE+fKDC14rO2nrHm6qjoAAAABJBJAAAAAAAGy50meMuDHNrR6/0zHeZUzfFf28tMkdazuC+CJiYiY7gAAAI3Ecvo08xHKb8oBE4pk9WauP7I5/lCZ77z1YAAAAAkgkgAAAAAAAkJBbcNy+5g9M9acv8JaFwmu2C8+bJoAACl1mec+ae1a8ohdKHLE1y3ie1pgGgAAAAAEkEkAAAAADalLXtEUrNp+IS8fDstud7RSP3kEJ30+lyZ+n0072lY4dDhxc53vbzZJ7bdgaYccYsdaR2bgAAAg63RTkt7mKfqnrXynAPP3rak+m8TEx5YhfZcOPLG2SkWQsnDI64r7fFgVw75tJmxfqrvHmvNw3AAAkgkgAGYibWitesztAN8OC+e/pxxvt1ntCww8Ox155Z9fxHKEnBhrhx1pWI5dZ8ugMVpWldqViv4jZkAAAAAAAAAAAHHNpMObnam1vurydgFVm4fkxxM459cR8c0N6FWcTwRS8Zaxyt+r8ggyQSQAlcOx+vUxPasbosrLhVNqXv5nYE/qAAAAAAAAAAAAAAAA46ynuaW9fEb/s7ExvG09AeenoQzlr6Mlq+JmGIAnpK54fG2kp87/8AQBIAAAAAAAAAAAAAAAAZYAUvEY21l4j4n/ThAA//2Q==",
-    effect: "zoom-out-right",
-  },
-  {
-    teamMember: Constant.TEAM_MEMBER7,
-    Designation: "Designation",
-    Linkedin: "",
-    img: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQArAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAUBAgMGB//EACwQAQACAQIFAwMDBQAAAAAAAAABAgMEEQUhMUFREhNhIlJxMpHBQmKBobH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A+iAAAAAAAADMRMztEbz4hn27+qKzS0TPSNuoNROxcNvaInLeKeIiN5b34Zy+nLO/zAK4ds2my4I3vXePurzhxAAAAAAAkgkgAAAAAAGXfSaa2omZ6UjrKOvNLT29PSvfbeZ+ZBthw48NfTjrtHnvLowAAAIeq0FMm9sX03jt2smAPP2rNbTW0bTHWGE/iuP6qZI/q5SgAAAAASQSQAAAAAADMdYegiNoiIef6L7HaMmOt46TG4NgAAAAAQ+KRvpo8xaP5VUdFpxa8RhpXvNt1XEbAAAAASQSQAAAAAADNaza0VjrM7Qu9LithwxS1vVt05dFPp7RTUY7f3RuvQAAAAAAVnFYv70TNZikRtE+fKDC14rO2nrHm6qjoAAAABJBJAAAAAAAGy50meMuDHNrR6/0zHeZUzfFf28tMkdazuC+CJiYiY7gAAAI3Ecvo08xHKb8oBE4pk9WauP7I5/lCZ77z1YAAAAAkgkgAAAAAAAkJBbcNy+5g9M9acv8JaFwmu2C8+bJoAACl1mec+ae1a8ohdKHLE1y3ie1pgGgAAAAAEkEkAAAAADalLXtEUrNp+IS8fDstud7RSP3kEJ30+lyZ+n0072lY4dDhxc53vbzZJ7bdgaYccYsdaR2bgAAAg63RTkt7mKfqnrXynAPP3rak+m8TEx5YhfZcOPLG2SkWQsnDI64r7fFgVw75tJmxfqrvHmvNw3AAAkgkgAGYibWitesztAN8OC+e/pxxvt1ntCww8Ox155Z9fxHKEnBhrhx1pWI5dZ8ugMVpWldqViv4jZkAAAAAAAAAAAHHNpMObnam1vurydgFVm4fkxxM459cR8c0N6FWcTwRS8Zaxyt+r8ggyQSQAlcOx+vUxPasbosrLhVNqXv5nYE/qAAAAAAAAAAAAAAAA46ynuaW9fEb/s7ExvG09AeenoQzlr6Mlq+JmGIAnpK54fG2kp87/8AQBIAAAAAAAAAAAAAAAAZYAUvEY21l4j4n/ThAA//2Q==",
-    effect: "zoom-out-left",
-  },
-  {
-    teamMember: Constant.TEAM_MEMBER7,
-    Designation: "Designation",
-    Linkedin: "",
-    img: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQArAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAUBAgMGB//EACwQAQACAQIFAwMDBQAAAAAAAAABAgMEEQUhMUFREhNhIlJxMpHBQmKBobH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A+iAAAAAAAADMRMztEbz4hn27+qKzS0TPSNuoNROxcNvaInLeKeIiN5b34Zy+nLO/zAK4ds2my4I3vXePurzhxAAAAAAAkgkgAAAAAAGXfSaa2omZ6UjrKOvNLT29PSvfbeZ+ZBthw48NfTjrtHnvLowAAAIeq0FMm9sX03jt2smAPP2rNbTW0bTHWGE/iuP6qZI/q5SgAAAAASQSQAAAAAADMdYegiNoiIef6L7HaMmOt46TG4NgAAAAAQ+KRvpo8xaP5VUdFpxa8RhpXvNt1XEbAAAAASQSQAAAAAADNaza0VjrM7Qu9LithwxS1vVt05dFPp7RTUY7f3RuvQAAAAAAVnFYv70TNZikRtE+fKDC14rO2nrHm6qjoAAAABJBJAAAAAAAGy50meMuDHNrR6/0zHeZUzfFf28tMkdazuC+CJiYiY7gAAAI3Ecvo08xHKb8oBE4pk9WauP7I5/lCZ77z1YAAAAAkgkgAAAAAAAkJBbcNy+5g9M9acv8JaFwmu2C8+bJoAACl1mec+ae1a8ohdKHLE1y3ie1pgGgAAAAAEkEkAAAAADalLXtEUrNp+IS8fDstud7RSP3kEJ30+lyZ+n0072lY4dDhxc53vbzZJ7bdgaYccYsdaR2bgAAAg63RTkt7mKfqnrXynAPP3rak+m8TEx5YhfZcOPLG2SkWQsnDI64r7fFgVw75tJmxfqrvHmvNw3AAAkgkgAGYibWitesztAN8OC+e/pxxvt1ntCww8Ox155Z9fxHKEnBhrhx1pWI5dZ8ugMVpWldqViv4jZkAAAAAAAAAAAHHNpMObnam1vurydgFVm4fkxxM459cR8c0N6FWcTwRS8Zaxyt+r8ggyQSQAlcOx+vUxPasbosrLhVNqXv5nYE/qAAAAAAAAAAAAAAAA46ynuaW9fEb/s7ExvG09AeenoQzlr6Mlq+JmGIAnpK54fG2kp87/8AQBIAAAAAAAAAAAAAAAAZYAUvEY21l4j4n/ThAA//2Q==",
-    effect: "",
+    //!Kushargra
+    teamMember: Constant.TEAM_MEMBER5,
+    Designation: "Deep Learning Researcher",
+    Linkedin: "https://www.linkedin.com/in/kushagrabhushan/",
+    img: "https://media.licdn.com/dms/image/D4D03AQESqGj9e6t1zQ/profile-displayphoto-shrink_400_400/0/1687593224479?e=1720051200&v=beta&t=rN0TNfRs6iAVcQoIaqu7FV_F2Mfl-ab-EJ4KzGvFW6Y",
+    // effect: "zoom-out",
   },
 ];

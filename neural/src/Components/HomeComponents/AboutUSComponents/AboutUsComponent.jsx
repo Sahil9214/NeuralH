@@ -1,65 +1,41 @@
-import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 import "./AboutUsComponent.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 import Constant from "../../../Utils/Constant";
 
 const AboutUsComponent = () => {
-  const fullText = Constant.ABOUT_US_DECSRIPTION_CONTEXT; // Replace with your full text
-  const [text, setText] = useState("");
-  const location = useLocation();
-
-  useEffect(() => {
-    const options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.5, // Adjust the threshold as needed
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting) {
-        let currentIndex = 0;
-        const typingInterval = setInterval(() => {
-          if (currentIndex <= fullText.length) {
-            setText(fullText.substring(0, currentIndex));
-            currentIndex++;
-          } else {
-            clearInterval(typingInterval);
-          }
-        }, 50); // Adjust the interval to control typing speed
-
-        return () => clearInterval(typingInterval);
-      }
-    }, options);
-
-    const target = document.querySelector(".aboutus_container");
-    if (target) {
-      observer.observe(target);
-    }
-
-    return () => {
-      if (target) {
-        observer.unobserve(target);
-      }
-    };
-  }, [fullText]);
-
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
-    <div className="aboutus_container" id="about">
-      <div className="aboutus_inner_container">
-        <p className="aboutus">{Constant.ABOUT_US}</p>
-        <div className="aboutus_context">
-          <p className="aboutus_context_description">
+    <div
+      className="h-full py-28 px-4 md:py-36 md:px-12 lg:py-42 md:flex items-center justify-center md:h-screen lg:h-screen "
+      style={{
+        background: "linear-gradient(90deg, #203B60 0%, #4C648B 100%)",
+        scrollSnapAlign: "start",
+      }}
+      id="about"
+    >
+      <div className="lg:w-4/6 xl:w-6/12 2xl:w-7/12  xl:mb-10 ">
+        <p
+          className="font-lato text-lg md:text-xl lg:text-2xl "
+          style={{ color: "#E0E0E0" }}
+        >
+          {Constant.ABOUT_US}
+        </p>
+        <div className="mt-4 md:mt-8 lg:mt-10">
+          <p
+            className="font-lato text-2xl sm:text-4xl/8 md:text-4xl/9 lg:text-4xl"
+            style={{ color: "#CEE7FE" }}
+          >
             {Constant.ABOUT_US_CONTEXT}
           </p>
         </div>
-        <div className="aboutus_our_team">
-          <p className="aboutus_our_team_description">{text}</p>
+        <div className="mt-4 md:mt-8 lg:mt-10">
+          <p
+            className="font-lato text-base/6 md:text-xl/9 lg:text-2xl/snug xl:text-xl"
+            style={{ color: "#ACC2EE" }}
+          >
+            {Constant.ABOUT_US_PAGE_DESCRIPTION}
+          </p>
         </div>
         <Link
           to="/about"
@@ -68,12 +44,19 @@ const AboutUsComponent = () => {
             fontStyle: "none",
           }}
         >
-          <div className="about_us_know_more">
-            <p className="about_us_know_more_text">Know More</p>
+          <div
+            className="w-40 h-10 mt-6 flex justify-center items-center md:w-48 md:h-16 md:mt-10 lg:w-64"
+            style={{ border: "1px solid #ACC2EE" }}
+          >
+            <p
+              className="font-lato text-bas md:text-xl lg:text-2xl"
+              style={{ color: "#ACC2EE" }}
+            >
+              Know More
+            </p>
           </div>
         </Link>
       </div>
-      ssssssss
     </div>
   );
 };

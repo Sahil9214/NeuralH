@@ -2,7 +2,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  
   padding: 10px 20px;
   top: 0;
   left: 0;
@@ -10,8 +10,9 @@
   z-index: 1000;
  
   position: fixed;
- 
+  
   background-color: #ffff;
+  align-items: center;
 }
 
 .navbar a {
@@ -22,17 +23,15 @@
   width: 211px;
   height: 62px;
 }
-.menu-toggle.open{
-  border: 5px solid green;
-}
+
 .logo {
   font-size: 24px;
-  width: 60px;
-  height: 60px;
+  width: 211px;
+  height: 62px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 100px !important;
+ 
 }
 
 .menu {
@@ -80,6 +79,7 @@
   cursor: pointer;
   gap: 6px;
   margin-top: 12px;
+  
 }
 
 .menu-toggle span {
@@ -88,6 +88,7 @@
   width: 100%;
   display: block;
   margin-top: 3px;
+  
 }
 
 .navbar .menu li {
@@ -219,85 +220,19 @@
   }
   .logo {
     font-size: 24px;
-    width: 40px;
-    height: 30px;
+    width: 212px;
+    height: 62px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 85px !important;
-    
-    margin-left: -20px;
+                                 
+
   }
   .navbar_logo {
-    width: 120px;
-  height: auto;
-    margin-left: -55px;
+    width: 60%;
+    height: auto;
+    /* border: 3px solid green; */
+    margin-left: 7%;
   }
 }
 
-@media (max-width: 320px) {
-  .navbar.scrolled{
-    padding: 0px;
-  }
- 
-  .navbar .menu li {
-    margin-top: 30px;
-  }
-  .menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    width: 100%;
-    padding: 10px 20px;
-    transition: all 0.3s ease;
-   
-  }
-  .menu.open {
-    display: flex;
-    margin-top: 10px;
-    height: 300px;
-    padding: 17px;
-    margin-top: 50px;
-  }
-  .menu-toggle {
-    display: flex;
-  }
-  .navbar {
-    padding: 0px;
-    
-  }
-  .menu li {
-    margin-top: 20px;
-  }
-  .menu li a {
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-    color: #374357;
-    text-align: center;
-  }
-  .menu li a:hover {
-    color: #acc2ee;
-    font-size: 20px;
-    text-decoration: none;
-  }
-  .menu ul li {
-    margin-top: 20px;
-  }
-  .logo {
-    font-size: 20px;
-    width: 40px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 85px !important;
-  }
-  .navbar_logo {
-    width: 100px;
-    height: 25px;
-  }
-}

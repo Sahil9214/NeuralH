@@ -1,9 +1,10 @@
 
 .service{
     height:100%;
-
-    padding:30px 20px 50px 20px;
+    padding: 50px;
+   
     background: linear-gradient(90deg, #203B60 0%, #4C648B 100%);
+    
 }
 .our_servive_heading{
   font-family: Lato;
@@ -12,6 +13,7 @@
   line-height: 62px;
   text-align: center;
   color:#E0E0E0;
+  ;
 }
 .service_main_container{
   display: flex;
@@ -19,18 +21,20 @@
   padding: 10px 20px;
   gap: 30px;
  
-  margin-top: -15px;
+ 
 }
 
 .service_left_container{
       background-color: #fff;
       height: 500px;
-      padding: 80px 80px;
+      padding: 50px;
       width: 45%;
 }
 .ourservice_img_container{
     height:200px;
     width:314px;
+   
+    
    
 }
 .ourservice_img{
@@ -40,13 +44,14 @@
 .our_service_heading{
   width: 500px;
   height: 100px;
-  margin-top: -30px;
+  
 }
-.our_service_paragraph{
-    width: 500px;
-    height: 100px;
-    margin-top: -30px;
+.our_service_description{
+ 
+  width: 90%;
+  height: 100px;
 }
+
 .our_service_heading_paragraph{
     font-family: Lato;
     font-size: 50px;
@@ -55,13 +60,9 @@
     text-align: left;
     
 }
-.our_service_description{
-    width: 500px;
-    height: 100px;
-    margin-top: 50px;
-    
-   
-    
+.our_service_paragraph{
+  width: 70%;
+ 
 }
 .our_service_description_paragraph{
     font-family: Lato;
@@ -76,7 +77,7 @@
 }
 @media screen and (max-width:1142px) and (min-width:768px){ 
   .service{
-      padding: 20px 0px;
+      padding: 50px 0px;
       width: 100%;
     
       
@@ -120,9 +121,7 @@
       height: auto;
       padding: 0px;
       margin: 0px;
-      width: 60%;
-      
-      
+      width: 60%;   
   }
   .our_service_heading_paragraph{
       font-family: Lato;
@@ -153,7 +152,7 @@
 
 @media screen and (max-width: 767px) {
     .service{
-        padding: 20px 0px;
+        padding: 40px 0px;
         width: 100%;
         
     }
@@ -171,7 +170,8 @@
     .service_left_container{
        width: 90%;
        
-       padding: 20px;
+       padding:80px 20px;
+       height: auto;
     }
     .service_main_container{
         flex-direction: column;
@@ -189,6 +189,9 @@
         margin: 0px;
         width: 252px;
         height: 72px;
+        
+        
+        
     }
     .our_service_heading_paragraph{
         font-family: Lato;
@@ -205,7 +208,7 @@
       height: auto;
       padding: 0px;
       margin: 0px;
-      margin-top: 40px;
+      height: 150px;
       
     }
     .our_service_description_paragraph{

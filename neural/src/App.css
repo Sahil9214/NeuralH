@@ -1,148 +1,18 @@
-.App {
-
-    background-image: url('./Images/background-image.jpg');
-    height: 100vh;
-    background-size: cover;
-    background-repeat: none;
-    background-position: center;
-    margin: 0;
-    overflow: hidden;
-    font-family: "Protest Revolution", sans-serif;
-     
+.name_of_website{
+    font-size: 1.2rem;
+    line-height: 40px;
     text-align: center;
-  }
-  .main{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -60%);
-    text-align: center;
-  }
-  
-   .site{
-    font-size:65px ;
-    color: #fff;
-  
-   }
-   .coming-soon {
-    font-size: 85px;
-    white-space: nowrap; /* Prevent text from wrapping */
-    overflow: hidden;
-    color: #fff;
-  }
-  
-  .coming-soon.bordered {
-    border-right: .15em solid orange; /* Simulate cursor */
-    animation: typing 4s steps(40, end) forwards; /* Adjust duration and steps as needed */
-  }
-  
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-  }
-  
-  
-  
-  .kinetic {
-    height: 80px;
-    position: relative;
-    width: 80px;
-    margin-left: 30px;
-  }
-  
-  .kinetic::after,
-  .kinetic::before {
-    animation: rotateA 2s linear infinite 0.5s;
-    border: 50px solid transparent;
-    border-bottom-color: #fff;
-    content: "";
-    height: 0;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 0;
-  }
-  
-  .kinetic::before {
-    animation: rotateB 2s linear infinite;
-    transform: rotate(90deg);
-  }
-  
-  @keyframes rotateA {
-    0%,
-    25% {
-      transform: rotate(0deg);
-    }
-    50%,
-    75% {
-      transform: rotate(180deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes rotateB {
-    0%,
-    25% {
-      transform: rotate(90deg);
-    }
-    50%,
-    75% {
-      transform: rotate(270deg);
-    }
-    100% {
-      transform: rotate(450deg);
-    }
-  }
-  
-  .btn{
-    padding: 12px 20px;
-    border-radius: 20px;
-    color: #fff;
-    font-weight: 600;
-    font-size: 20px;
-    background: linear-gradient(90deg, rgba(13,0,36,1) 0%, rgba(228,32,85,1) 6%, rgba(85,0,255,1) 60%);
-  }
-  .social-media{
-    display: flex;
-    justify-content: space-around;
-  
-  }
-  .social-media img{
-    width:3rem;
-    height:3rem
-  }
-  @media screen and (max-width:1200px) and (min-width:768px){
-    .main{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -60%);
-      text-align: center;
-    }
-    .coming-soon {
-      font-size: 65px;
-      white-space: nowrap; /* Prevent text from wrapping */
-      overflow: hidden;
-      color: #fff;
-    }
-  }
-
-@media screen and (max-width:767px) and (min-width:320px){
-  .main{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -60%);
-    text-align: center;
-  }
-  .coming-soon {
-   font-size: 45px;
-    white-space: nowrap; /* Prevent text from wrapping */
-     overflow: hidden;
-    color: #fff; 
-
-  }
-
+ 
+    margin-top: -20px;
 }
+.App{
+    scroll-behavior: smooth;
+}
+@media screen and (max-width:768px){
+    .name_of_website{
+        text-align: center; 
+        font-size:1rem ;
+        margin: 0px;
+    }
+}
+

@@ -14,16 +14,22 @@ const Constant = {
   ABOUT_US_OUR_TEAM:
     "Our team consists of passionate AI researchers, data scientists, engineers and visionaries dedicated to pushing the boundaries of AI's potential.",
   ABOUT_US_PAGE_DESCRIPTION:
-    "We believe in the transformative power of technology to solve complex problems, enhance human creativity, and drive forward innovation in unprecedented ways.",
+    "Our team consists of passionate AI researchers, data scientists, engineers and visionaries dedicated to pushing the boundaries of AI's potential.",
+  ABOUT_US_KNOW_MORE_DESCRIPTION:
+    "Our team is driven by a collective passion for pushing the boundaries of AI, exploring new horizons, and delivering impactful solutions that drive real-world change.",
   //!OWNER NAME
-  TEAM_MEMBER1: "Sandeep Gupta",
-  TEAM_MEMBER2: "Amrit Anand",
-  TEAM_MEMBER3: "Moshin Hasan Khan",
+  Owner_Name1: "Sandeep Gupta",
+  Owner_Name2: "Amrit Anand",
+  Owner_Name3: "Moshin Hasan Khan",
+  Owner_Name4: "Prasanna Kakhandaki",
   //!EMPLOYEE NAME
   TEAM_MEMBER4: "Utkarsh Singhal",
-  TEAM_MEMBER5: "Rushikesh Bhomale",
-  TEAM_MEMBER6: "Janhavi Singh",
-  TEAM_MEMBER7: "Kushagra Bushan",
+  TEAM_MEMBER3: "Rushikesh Bhomale",
+  TEAM_MEMBER1: "Janhavi Singh",
+  TEAM_MEMBER2: "Revanth MK",
+  TEAM_MEMBER5: "Kushagra Bushan",
+  TEAM_MEMBER6: "Software Engineer",
+
   KNOW_MORE: "Know More",
   OUR_SOLUTIONS_CONTEXT:
     "Generative AI Platforms for Text and Image Applications",
@@ -31,8 +37,8 @@ const Constant = {
     "Our solutions, powered by advanced deep learning models, are designed to address the unique challenges and needs of businesses across various sectors, including Retail, E-Commerce, FMCG, Banking and Insurance.\n ",
   OUR_SOLUTIONS_DESCRIPTION2:
     "From creating unique product designs with Generative AI to predicting future demand with precision, detecting fraudulent activities, segmenting customers for personalized experiences, and assessing risks accurately, we are committed to helping our clients harness the power of AI/ML to achieve their business objectives.",
-  TAILORED_AI_ML_DEVELOPMENT: "Bespoke AI/ML Development",
-  TAILORED_AI_ML_DEVELOPMENT_DESCRIPTION:
+  BESPOKE_AI_ML_DEVELOPMENT: "Bespoke AI/ML Development",
+  BESPOKE_AI_ML_DEVELOPMENT_DESCRIPTION:
     "NeuralHQ is dedicated to offering custom AI/ML solutions that augment your processes. We specialize in developing solutions that harness the potential of AI to meet the unique needs of your business today.",
   STRATEGIC_AI_CONSULTANCY_DESCRIPTION:
     "Embark on your AI journey with NeuralHQ. Our consultancy services are designed to help you integrate AI technology seamlessly into your operations, ensuring you're well-prepared for the future of AI across all applications.",
@@ -40,7 +46,7 @@ const Constant = {
   AI_SOMMELIER: "AI Sommelier",
   AI_CATALOGUE: "AI Catalogue",
   AI_HOME_DECOR: "AI Home Decor",
-  RAG_PLUS_CHATBOTS: "RAG + Chatbots",
+  RAG_PLUS_CHATBOTS: "Supply Chain Optimization",
   CASE_STUDY: "Case Study",
   FOLLOW_US_ON: "Follow us on",
   YOUR_NAME: "Your Name",
@@ -49,28 +55,36 @@ const Constant = {
   EMAIL_ADDRESS: "Email Address",
   DESCRIPTION: "Description",
   SUBMIT: "Submit",
-  NEURAL_HQ: "NEURALHQ",
+  NEURAL_HQ: "NEURALHQ TECHNOLOGIES",
   ADDRESS1: "Unit No. 1f-01, 1st Floor",
-  ADDRESS2: "Century Central Konanakunte",
+  ADDRESS2: "Century Central, Konanakunte",
   ADDRESS3: "Bengaluru, Karnataka - 560062",
+  SANDEEP_SIR_EMAIL_ADDRESS: "Email: sandeep@neuralhq.ai",
   PINCODE: "560062",
   NEURAL_HQ_DATE: "NeuralHQ@2024",
   STRATEGIC_AI_CONSULTANCY: "Strategic AI Consultancy",
   ABOUT_US_DESCRIPTION:
     "We believe in the transformative power of technology to solve complex problems, enhance human creativity, and drive forward innovation in unprecedented ways.",
   ABOUT_US_DECSRIPTION_CONTEXT:
-    "Our team consists of passionate AI researchers, data scientists, engineers and visionaries dedicated to pushing the boundaries of what's possible with AI.",
+    "Our team is driven by a collective passion for pushing the boundaries of AI, exploring new horizons, and delivering impactful solutions that drive real-world change.",
   OUR_TEAM: "Our Team",
   //!EMPLOYEE DESIGNATION
-  EMPLOYEE_NAME1_DESIGNATION: "Software Engineer",
-  EMPLOYEE_NAME2_DESIGNATION: "Software Engineer",
-  EMPLOYEE_NAME3_DESIGNATION: "Deep Learning Researcher",
-  EMPLOYEE_NAME4_DESIGNATION: "Deep Learning Researcher",
-  EMPLOYEE_NAME5_DESIGNATION: "",
+
+  EMPLOYEE_NAME1_DESIGNATION: "Deep Learning Researcher",
+  EMPLOYEE_NAME2_DESIGNATION: "Machine Learning Engineer",
+  EMPLOYEE_NAME3_DESIGNATION: "Data Engineer",
+  EMPLOYEE_NAME4_DESIGNATION: "Software Engineer",
+  EMPLOYEE_NAME5_DESIGNATION: "Deep Learning Researcher",
+  EMPLOYEE_NAME6_DESIGNATION: "Software Engineer",
+  EMPLOYEE_NAME7_DESIGNATION: "Software Engineer",
+
   // !OWNER DESIGNATION
+
   SANDEEP_DESIGNATION: "CEO",
   AMRIT_DESIGNATION: "CTO",
   MOSHIN_HASAN_KHAN_DESIGNATION: "Chief Scientist",
+  PRASANNA_KAKHANDAKI_DESIGNATION: "Advisor",
+  SCROLL: "Scroll",
 };
 
 export default Constant;

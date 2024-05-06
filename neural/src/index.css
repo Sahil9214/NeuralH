@@ -1,3 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* :root{
+  scroll-snap-type:y mandatory;
+  scroll-padding-top:65px;
+  
+  scroll-snap-stop: always;
+} */
+
+/* .about_us_page{
+  scroll-snap-type: none;
+} */
+
+
+@media (max-width: 768px) {
+  :root {
+    scroll-snap-type: unset;
+    scroll-padding-top: unset;
+    scroll-snap-stop: unset;
+  }
+}
 body {
   margin: 0;
   font-family: "Baumans", system-ui!important;
@@ -5,6 +27,7 @@ body {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 ::-webkit-scrollbar {

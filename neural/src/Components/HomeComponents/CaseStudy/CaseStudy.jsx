@@ -1,54 +1,43 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./CaseStudy.css";
+import Constant from "../../../Utils/Constant";
+
 import CaseStudyGrid from "../../../Utils/CaseStudyGrid";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 const CaseStudy = () => {
-  useEffect(() => {
-    AOS.init();
-
-    // You can also pass an optional settings object
-    // below listed default settings
-    AOS.init({
-      // Global settings:
-      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-      startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
-      initClassName: "aos-init", // class applied after initialization
-      animatedClassName: "aos-animate", // class applied on animation
-      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-      offset: 120, // offset (in px) from the original trigger point
-      delay: 0, // values from 0 to 3000, with step 50ms
-      duration: 2000, // values from 0 to 3000, with step 50ms
-      easing: "ease", // default easing for AOS animations
-      once: false, // whether animation should happen only once - while scrolling down
-      mirror: false, // whether elements should animate out while scrolling past them
-      anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
-    });
-  }, []);
   return (
-    <div className="case_study_mainContainer" id="casestudy">
-      <div className="animation">
-        <h1 className="case_study_heading">Case Studies</h1>
-
-        <div className="case_study_container">
-          {CaseStudyGrid.map((study, i) => {
+    <div
+      className="flex h-screen justify-center items-center px-0 xl:h-screen xl:flex xl:justify-center xl:items-center"
+      id="casestudy"
+      style={{ scrollSnapAlign: "start" }}
+    >
+      <div className=" mt-28    w-11/12 m-auto  ">
+        <div>
+          <h1
+            className="font-lato text-3xl  text-center sm:text-5xl sm:py-6 lg:text-5xl xl:text-5xl xl:mb-14   "
+            style={{ color: "#4D658D" }}
+          >
+            {Constant.CASE_STUDIES}
+          </h1>
+        </div>
+        <div className="  mt-16 lg:grid grid-cols-2 gap-10 ">
+          {CaseStudyGrid.map((el, i) => {
             return (
               <div
-                key={i}
-                className="case_study_inner_containers"
-                data-aos="fade-up"
-                data-aos-anchor-placement="bottom-bottom"
+                className="  flex border border-slate-300 px-2 py-4 justify-between items-center gap-8 mt-5 sm:py-8 sm:px-4 lg:py-10 "
+                style={{ border: "1px solid #0F1C2E" }}
               >
-                <p className="case_study_study_name">{study.case_study_name}</p>
+                <p
+                  className="font-lato text-base  leading-5  sm:text-2xl md:text-3xl lg:text-3xl  "
+                  style={{
+                    color: "#1E3A5F",
+                    fontFamily: "Lato",
+                  }}
+                >
+                  {el.case_study_name}
+                </p>
                 <svg
-                  className="case_study_svg_file"
-                  width="40"
-                  height="40"
+                  className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14"
                   viewBox="0 0 60 60"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -62,14 +51,14 @@ const CaseStudy = () => {
                     fill="white"
                     stroke="#0F1C2E"
                   />
-                  <g clipPath="url(#clip0_218_2429)">
+                  <g clip-path="url(#clip0_906_453)">
                     <path
                       d="M26.6154 15L23 18.525L34.7436 30L23 41.475L26.6154 45L42 30L26.6154 15Z"
                       fill="#0F1C2E"
                     />
                   </g>
                   <defs>
-                    <clipPath id="clip0_218_2429">
+                    <clipPath id="clip0_906_453">
                       <rect
                         width="40"
                         height="40"

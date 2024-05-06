@@ -1,43 +1,22 @@
+/* eslint-disable no-lone-blocks */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useEffect, useState } from "react";
 import Constant from "../../../Utils/Constant";
 import "./GenerativeAi.css";
 import { Link } from "react-router-dom";
-import AOS from "aos";
-import bulb from "../../../Images/BulbImage.png";
 import generativeImage from "../../../Images/file1.png";
-import generativeImageMobile from "../../../Images/generative_ai_responsive.png";
 import "aos/dist/aos.css";
-import mobileImage from "../../../Images/mobile-responsive.png";
-const TypingText = ({ text }) => {
-  const [displayText, setDisplayText] = useState("");
-
-  useEffect(() => {
-    let currentIndex = 0;
-    const typingInterval = setInterval(() => {
-      if (currentIndex <= text.length) {
-        setDisplayText(text.substring(0, currentIndex));
-        currentIndex++;
-      } else {
-        clearInterval(typingInterval);
-      }
-    }, 50); // Adjust the interval to control typing speed
-
-    return () => clearInterval(typingInterval);
-  }, [text]);
-
-  return <p className="generative_description">{displayText}</p>;
-};
+import mobileImage from "../../../Images/file.png";
 
 const GenerativeAi = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1124);
     };
 
-    handleResize(); // Check initial window width
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -45,81 +24,89 @@ const GenerativeAi = () => {
     };
   }, []);
 
-  useEffect(() => {
-    AOS.init();
-
-    AOS.init({
-      disable: false,
-      startEvent: "DOMContentLoaded",
-      initClassName: "aos-init",
-      animatedClassName: "aos-animate",
-      useClassNames: false,
-      disableMutationObserver: false,
-      debounceDelay: 50,
-      throttleDelay: 99,
-      offset: 500,
-      delay: 0,
-      duration: 1000,
-      easing: "ease",
-      once: false,
-      mirror: false,
-      anchorPlacement: "top-bottom",
-    });
-  }, []);
-
   return (
-    <div className="generativeai_container" id="solution">
+    <div
+      className="h-full w-full flex flex-col pb-10  lg:flex-row-reverse lg:h-screen  lg:justify-between lg:space-around lg:pb-0  "
+      style={{ scrollSnapAlign: "start" }}
+      id="solution"
+    >
       <div
-        className="generative_ai_container"
-        data-aos={isMobile ? "" : "fade-up"}
-        data-aos-anchor-placement={isMobile < 768 ? "" : "bottom-bottom"}
+        className="h-2/5  w-full md:w-full md:h-2/5 lg:h-full lg:w-3/6 xl:h-full xl:w:3/6 "
+        style={{ backgroundImage: "" }}
       >
-        <p className="generative_ai">{Constant.OUR_SOLUTIONS}</p>
-        {isMobile < 768 ? "" : <br />}
-        {/* <p className="our_solutions_context">
-          {Constant.OUR_SOLUTIONS_CONTEXT}
-        </p> */}
-
-        <p className="generative_description">
-          {Constant.OUR_SOLUTIONS_DESCRIPTION1}
-        </p>
-        <TypingText text={Constant.OUR_SOLUTIONS_DESCRIPTION2} />
-        <div className="generative_contact_us">
-          <Link
-            to="/contact"
-            style={{ textDecoration: "none", listStyle: "none" }}
-          >
-            <p className="generative_us_text">{Constant.CONTACT_US}</p>
-          </Link>
-        </div>
-      </div>
-      <div className="generative_img">
         {isMobile ? (
           <img
-            className="generative_img_inside_second_img_mobile_views"
+            className="w-full h-full object-cover"
             alt="ai-image"
             src={mobileImage}
             loading="lazy"
+            style={{ opacity: "0.6" }}
           />
         ) : (
           <>
             <img
-              className="generative_img_inside_first_img"
+              className="h-full w-full object-fill"
               alt="ai-image"
               src={generativeImage}
               loading="lazy"
-            />
-            <img
-              className="generative_img_inside_second_img"
-              alt="ai-image"
-              src={bulb}
-              loading="lazy"
+              style={{ opacity: ".6" }}
             />
           </>
         )}
+      </div>
+
+      <div className="h-3/5  px-4 mt-2 lg:w-3/6 md:h-3/5  lg:m-auto lg:pl-10 xl:m-auto ">
+        <div className="lg:text-left ">
+          <p
+            className="font-lato text-xl sm:text-xl md:text-xl lg:text-2xl xl:text-xl xl:mb-8"
+            style={{ color: "#4D658D" }}
+          >
+            {Constant.OUR_SOLUTIONS}
+          </p>
+        </div>
+        <div className="mt-1 sm:mt-3 ">
+          <p
+            className="font-lato text-xl sm:text-xl md:text-xl lg:text-2xl xl:text-2xl"
+            style={{ color: "#374357" }}
+          >
+            {Constant.OUR_SOLUTIONS_DESCRIPTION1}
+          </p>
+        </div>
+        <div className="xl:mt-8">
+          <p
+            className=" font-lato text-xl pt-2 sm:text-xl md:text-xl lg:text-2xl xl:text-2xl "
+            style={{ color: "#374357" }}
+          >
+            {Constant.OUR_SOLUTIONS_DESCRIPTION2}
+          </p>
+        </div>
+        <Link
+          to="/contact"
+          style={{ textDecoration: "none", listStyle: "none" }}
+        >
+          <div
+            className="w-40 cursor-pointer h-1/12 px-10 py-2.5 mt-2 sm:w-44 sm:mt-5 lg:w-72 lg:h-16 flex items-center justify-center border border-transparent transition-colors duration-300 focus:bg-gray-300 focus:text-gray-800"
+            style={{ border: "1px solid #0F1C2E" }}
+          >
+            <p className="font-lato text-base text-center sm:text-xl">
+              {Constant.CONTACT_US}
+            </p>
+          </div>
+        </Link>
       </div>
     </div>
   );
 };
 
 export default GenerativeAi;
+{
+  /* <div
+        className="h-3/6 w-full  md:w-full md:h-full lg:h-full lg:w-3/5"
+        style={{
+          backgroundImage: `url(${isMobile ? mobileImage : generativeImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          opacity: "0.6",
+        }}
+      ></div> */
+}

@@ -10,7 +10,6 @@ const AllRouter = () => {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<AboutUSTeam />} />
       <Route path="/contact" element={<ContactUs />} />
-      <Route />
     </Routes>
   );
 };

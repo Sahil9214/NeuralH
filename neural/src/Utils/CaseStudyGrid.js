@@ -2,10 +2,11 @@ import Constant from "./Constant";
 
 const CaseStudyGrid = [
   {
-    id: 1,
-    case_study_name: Constant.UNDERGROUND_TUNNEL_DETECTION,
+    id: 4,
+    case_study_name: Constant.RAG_PLUS_CHATBOTS,
     link: "",
   },
+
   // {
   //   id: 2,
   //   case_study_name: Constant.AI_HOME_DECOR,
@@ -17,8 +18,8 @@ const CaseStudyGrid = [
     link: "",
   },
   {
-    id: 4,
-    case_study_name: Constant.RAG_PLUS_CHATBOTS,
+    id: 1,
+    case_study_name: Constant.UNDERGROUND_TUNNEL_DETECTION,
     link: "",
   },
   {

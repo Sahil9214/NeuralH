@@ -6,7 +6,16 @@
   }
   
   .loader2_main{
-    background: linear-gradient(90deg, #203B60 0%, #4C648B 100%);
+    /* background: */
+  }
+  .loader2_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust this value as needed */
+    /* background: linear-gradient(90deg, #203B60 0%, #4C648B 100%); */
+    /* ; */
+    ;
   }
   
   .ball {
