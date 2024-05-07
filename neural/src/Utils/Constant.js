@@ -36,7 +36,7 @@ const Constant = {
   OUR_SOLUTIONS_DESCRIPTION1:
     "Our advanced deep learning-powered solutions are tailored to meet the diverse challenges and requirements of businesses spanning Retail, E-Commerce, CPG, and Financial Services sectors.\n ",
   OUR_SOLUTIONS_DESCRIPTION2:
-    "From crafting distinctive product designs using Generative AI to precisely forecasting future demand, streamlining supply chains, segmenting customers for tailored experiences, and detecting fraudulent activities, we are dedicated to empowering our clients to leverage AI/ML effectively in accomplishing their business goals..",
+    "From crafting distinctive product designs using Generative AI to precisely forecasting future demand, streamlining supply chains, segmenting customers for tailored experiences, and detecting fraudulent activities, we are dedicated to empowering our clients to leverage AI/ML effectively in accomplishing their business goals.",
   BESPOKE_AI_ML_DEVELOPMENT: "Bespoke AI/ML Development",
   BESPOKE_AI_ML_DEVELOPMENT_DESCRIPTION:
     "NeuralHQ is dedicated to offering custom AI/ML solutions that augment your processes. We specialize in developing solutions that harness the potential of AI to meet the unique needs of your business today.",

@@ -85,7 +85,7 @@ const GenerativeAi = () => {
           style={{ textDecoration: "none", listStyle: "none" }}
         >
           <div
-            className="w-40 cursor-pointer h-1/12 px-10 py-2.5 mt-2 sm:w-44 sm:mt-5 lg:w-72 lg:h-16 flex items-center justify-center border border-transparent transition-colors duration-300 focus:bg-gray-300 focus:text-gray-800"
+            className="w-44 cursor-pointer h-1/12 px-10 py-2.5 mt-2 sm:w-44 sm:mt-5 lg:w-72 lg:h-16 flex items-center justify-center border border-transparent transition-colors duration-300 focus:bg-gray-300 focus:text-gray-800"
             style={{ border: "1px solid #0F1C2E" }}
           >
             <p className="font-lato text-base text-center sm:text-xl">
