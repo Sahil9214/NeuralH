@@ -102,7 +102,7 @@
    
 }
 .team_member{
-    font-family: Baumans;
+    font-family: Lato;
     font-size: 20px;
     font-weight: 400;
     line-height: 47.28px;
@@ -152,6 +152,7 @@
 .team_member {
     margin-top: 10px; /* Adjust space between image and text */
     text-align: center; /* Center text */
+    font-family: Lato;
 }
 
 .description_of_desgination {
@@ -160,6 +161,7 @@
     justify-content: space-around;
     align-items: center;
     width:auto;
+    font-family: Lato;
     
 }
 
@@ -173,6 +175,7 @@
 .designation_paragraph {
     color:#1E3A5F;
     font-size: 16px;
+    font-family: Lato;
 }
 
 .linkedin_image {

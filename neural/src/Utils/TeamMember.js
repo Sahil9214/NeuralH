@@ -75,7 +75,7 @@ export const Employees = [
   {
     //!Kushargra
     teamMember: Constant.TEAM_MEMBER5,
-    Designation: "Deep Learning Researcher",
+    Designation: "Research Intern",
     Linkedin: "https://www.linkedin.com/in/kushagrabhushan/",
     img: "https://media.licdn.com/dms/image/D4D03AQESqGj9e6t1zQ/profile-displayphoto-shrink_400_400/0/1687593224479?e=1720051200&v=beta&t=rN0TNfRs6iAVcQoIaqu7FV_F2Mfl-ab-EJ4KzGvFW6Y",
     // effect: "zoom-out",

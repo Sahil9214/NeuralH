@@ -28,7 +28,7 @@ const Constant = {
   TEAM_MEMBER1: "Janhavi Singh",
   TEAM_MEMBER2: "Revanth MK",
   TEAM_MEMBER5: "Kushagra Bushan",
-  TEAM_MEMBER6: "Software Engineer",
+  TEAM_MEMBER6: "Intern",
 
   KNOW_MORE: "Know More",
   OUR_SOLUTIONS_CONTEXT:
