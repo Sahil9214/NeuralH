@@ -53,7 +53,7 @@ export const Employees = [
     teamMember: Constant.TEAM_MEMBER3,
     Designation: Constant.EMPLOYEE_NAME3_DESIGNATION,
     Linkedin: "https://www.linkedin.com/in/rushikesh-bhomale-aa29a3158/",
-    img: "https://media.licdn.com/dms/image/D4D03AQEiUwyJSdTN3w/profile-displayphoto-shrink_400_400/0/1700584106803?e=1719446400&v=beta&t=YwxCmLAHGFls_9Kqu6o88FivFmAdt9elWaUV-C52QCI",
+    img: "https://github.com/Sahil9214/random-repo/assets/106021674/77ac7cef-114b-4346-b898-ad5b1cffecf1",
     // effect: "zoom-out",
   },
   {

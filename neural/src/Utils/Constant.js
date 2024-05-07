@@ -10,7 +10,7 @@ const Constant = {
   WE_HELP_YOU_TO_HARNESS_THE_POWER_OF_AI_FOR_A_BRIGHTER_TOMORROW:
     "We help you to harness the power of AI for a brighter tomorrow",
   ABOUT_US_CONTEXT:
-    "At NeuralHQ we are committed to building responsible and human-centric AI systems that support your business day after day, offering solutions that are as dynamic and adaptable as the industries we serve.",
+    "At NeuralHQ, we are committed to building responsible and human-centric AI systems that support your business day after day, offering solutions that are as dynamic and adaptable as the industries we serve.",
   ABOUT_US_OUR_TEAM:
     "Our team consists of passionate AI researchers, data scientists, engineers and visionaries dedicated to pushing the boundaries of AI's potential.",
   ABOUT_US_PAGE_DESCRIPTION:
