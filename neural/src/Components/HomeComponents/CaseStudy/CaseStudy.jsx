@@ -11,7 +11,7 @@ const CaseStudy = () => {
       id="casestudy"
       style={{ scrollSnapAlign: "start" }}
     >
-      <div className=" mt-28    w-11/12 m-auto  ">
+      <div className="  w-11/12 m-auto  ">
         <div>
           <h1
             className="font-lato text-3xl  text-center sm:text-5xl sm:py-6 lg:text-5xl xl:text-5xl xl:mb-14   "

@@ -146,7 +146,7 @@ const Navbar = ({ showNavs }) => {
                   to="/#casestudy"
                   className="Navbar_Tags"
                   onClick={(e) => {
-                    smoothScrollTo("#casestudy", 0);
+                    smoothScrollTo("#casestudy", -40);
                     closeMenu();
                     e.preventDefault();
                   }}
