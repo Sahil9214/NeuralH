@@ -66,9 +66,9 @@ export const Employees = [
   },
   //!Deependra
   {
-    teamMember: Constant.TEAM_MEMBER6,
+    teamMember: "Deependra kumar",
     Designation: Constant.TEAM_MEMBER6,
-    Linkedin: "https://www.linkedin.com/in/deependrakrdk/",
+    Linkedin: "",
     img: "https://github.com/Sahil9214/random-repo/assets/106021674/0ee088bc-0c57-430e-b67b-ce0c9e5e63a7",
     // effect: "zoom-out",
   },

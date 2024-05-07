@@ -12,7 +12,6 @@ import Navbar from "../../Components/Navbar/Navbar";
 
 import Footer from "../../Components/Footer/Footer";
 
-
 const AboutUSTeam = () => {
   // const [showAllEmployees, setShowAllEmployees] = useState(false);
 
@@ -48,11 +47,9 @@ const AboutUSTeam = () => {
   }, []);
 
   return (
-
     <div>
       <Navbar showNavs={false} />
       <div className="about_us_page" style={{ scrollSnapAlign: "unset" }}>
-
         <div className="about_us_container">
           <div className="about_us_inner_container">
             <div className="about_us_inner_container_content">
@@ -101,13 +98,17 @@ const AboutUSTeam = () => {
                 <p className="team_member">{team.teamMember}</p>
                 <div className="description_of_desgination">
                   <p className="designation_paragraph">{team.Designation}</p>
-                  <a href={`${team.Linkedin}`}>
-                    <img
-                      src={linkedin}
-                      alt="linkedin-img"
-                      className="owner-linkedin"
-                    />
-                  </a>
+                  {team.teamMember === "Deependra kumar" ? (
+                    ""
+                  ) : (
+                    <a href={`${team.Linkedin}`} target="_blank">
+                      <img
+                        src={linkedin}
+                        alt="linkedin-img"
+                        className="owner-linkedin"
+                      />
+                    </a>
+                  )}
                 </div>
               </div>
             ))}
@@ -127,7 +128,6 @@ const AboutUSTeam = () => {
 
       <Footer style={{ scrollSnapAlign: "start" }} />
     </div>
-
   );
 };
 
