@@ -53,7 +53,7 @@ const Navbar = ({ showNavs }) => {
   const closeMenu = () => {
     setIsOpen(false);
   };
-  console.log(showNavs, "show******************");
+
   return (
     <div data-testid="navbar">
       <nav className={`navbar ${scrollPosition > 20 ? "scrolled" : ""}`}>

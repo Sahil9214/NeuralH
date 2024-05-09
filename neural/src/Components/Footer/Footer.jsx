@@ -144,7 +144,6 @@ import "aos/dist/aos.css";
 import "./Footer.css";
 
 function FooterLinks(props) {
-  console.log(props.text);
   return (
     <div className="footer_text_links">
       <p className="links_or_footer" style={{ color: props.color }}>
