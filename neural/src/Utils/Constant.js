@@ -51,7 +51,7 @@ const Constant = {
   FOLLOW_US_ON: "Follow us on",
   YOUR_NAME: "Your Name",
   MOBILE_NUMBER: "Phone Number",
-  SANDEEP_SIR_MOBILE_NUMBER: "+91-9809270006",
+
   EMAIL_ADDRESS: "Email Address",
   DESCRIPTION: "Description",
   SUBMIT: "Submit",
@@ -59,7 +59,8 @@ const Constant = {
   ADDRESS1: "Unit No. 1f-01, 1st Floor",
   ADDRESS2: "Century Central, Konanakunte",
   ADDRESS3: "Bengaluru, Karnataka - 560062",
-  SANDEEP_SIR_EMAIL_ADDRESS: "Email: sandeep@neuralhq.ai",
+  SANDEEP_SIR_EMAIL_ADDRESS: "Email: contact@neuralhq.ai",
+  SANDEEP_SIR_MOBILE_NUMBER: "Phone: +91-9809270006",
   PINCODE: "560062",
   NEURAL_HQ_DATE: "NeuralHQ@2024",
   STRATEGIC_AI_CONSULTANCY: "Strategic AI Consultancy",
