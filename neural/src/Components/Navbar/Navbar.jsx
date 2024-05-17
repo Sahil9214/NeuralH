@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 // import Link from "react-anchor-link-smooth-scroll";
 import close from "../../Images/Close.png";
+import { useLocation } from "react-router-dom";
 
 import Constant from "../../Utils/Constant";
 import NavbarLogo from "../../Images/NeuralHq1.png";
@@ -10,6 +11,7 @@ import NavbarLogo from "../../Images/NeuralHq1.png";
 const Navbar = ({ showNavs }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
+  const { pathname } = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,25 +29,51 @@ const Navbar = ({ showNavs }) => {
   const smoothScrollTo = (target, offset) => {
     const targetElement = document.querySelector(target);
     const navbarHeight = document.querySelector(".navbar").offsetHeight;
-    console.log(navbarHeight, "navbarHeight");
-    console.log(targetElement.offsetTop, "TARGETeLEMENT");
+
     let adjustedOffset = offset;
 
     if (window.innerWidth < 768) {
       adjustedOffset += 260;
     }
-    if (targetElement) {
+
+    if (targetElement && pathname === "/") {
       const targetPosition =
-        targetElement.offsetTop - navbarHeight - adjustedOffset;
+        target === "#solution" && window.innerWidth < 768
+          ? targetElement.offsetTop - navbarHeight - adjustedOffset - -60
+          : targetElement.offsetTop - navbarHeight - adjustedOffset;
+
       window.scrollTo({
         top: targetPosition,
         behavior: "smooth",
       });
-    } else {
+    } else if (pathname !== "/") {
+      localStorage.setItem("scrollTarget", target);
       window.location.href = "/";
     }
   };
+  useEffect(() => {
+    const scrollTarget = localStorage.getItem("scrollTarget");
 
+    if (scrollTarget) {
+      if (window.innerWidth < 768) {
+        if (scrollTarget === "#solution") {
+          smoothScrollTo(scrollTarget, -470);
+        } else if (scrollTarget === "#casestudy") {
+          smoothScrollTo(scrollTarget, -1100);
+        } else if (scrollTarget === "#services") {
+          smoothScrollTo(scrollTarget, -740);
+        } else if (scrollTarget === "#about") {
+          smoothScrollTo(scrollTarget, -240);
+        }
+      } else {
+        smoothScrollTo(scrollTarget, -20);
+      }
+
+      setTimeout(() => {
+        localStorage.removeItem("scrollTarget");
+      }, 2000);
+    }
+  }, []);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -101,7 +129,7 @@ const Navbar = ({ showNavs }) => {
             <>
               <li>
                 <Link
-                  to="/#about"
+                  to="#about"
                   className="Navbar_Tags"
                   onClick={(e) => {
                     smoothScrollTo("#about", -20);
@@ -115,10 +143,10 @@ const Navbar = ({ showNavs }) => {
               </li>
               <li>
                 <Link
-                  to="/#solution"
+                  to="#solution"
                   className="Navbar_Tags"
                   onClick={(e) => {
-                    smoothScrollTo("#solution", -20);
+                    smoothScrollTo("#solution", -200);
                     closeMenu();
                     e.preventDefault();
                   }}
@@ -129,7 +157,7 @@ const Navbar = ({ showNavs }) => {
               </li>
               <li>
                 <Link
-                  to="/#services"
+                  to="#services"
                   className="Navbar_Tags"
                   onClick={(e) => {
                     smoothScrollTo("#services", -20);
@@ -143,10 +171,10 @@ const Navbar = ({ showNavs }) => {
               </li>
               <li>
                 <Link
-                  to="/#casestudy"
+                  to="#casestudy"
                   className="Navbar_Tags"
                   onClick={(e) => {
-                    smoothScrollTo("#casestudy", -40);
+                    smoothScrollTo("#casestudy", -50);
                     closeMenu();
                     e.preventDefault();
                   }}

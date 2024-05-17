@@ -108,7 +108,7 @@ const Introduction = ({ scrollToAbout }) => {
               }}
             >
               <button
-                style={{ border: "1px solid #0F1C2E " }}
+                style={{ border: "1px solid #0F1C2E ", borderRadius: "10px" }}
                 className="font-lato text-base w-40 h-10 lg:w-64 lg:h-14 lg:text-xl"
               >
                 {Constant.CONTACT_US}

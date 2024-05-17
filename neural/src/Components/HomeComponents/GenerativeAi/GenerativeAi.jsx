@@ -58,7 +58,7 @@ const GenerativeAi = () => {
       <div className="h-3/5  px-4 mt-2 lg:w-3/6 md:h-3/5  lg:m-auto lg:pl-10 xl:m-auto ">
         <div className="lg:text-left ">
           <p
-            className="font-lato text-xl sm:text-xl md:text-xl lg:text-2xl xl:text-xl xl:mb-8"
+            className="font-lato text-xl sm:text-xl md:text-xl lg:text-2xl  xl:mb-8"
             style={{ color: "#4D658D" }}
           >
             {Constant.OUR_SOLUTIONS}
@@ -80,19 +80,27 @@ const GenerativeAi = () => {
             {Constant.OUR_SOLUTIONS_DESCRIPTION2}
           </p>
         </div>
-        <Link
-          to="/contact"
-          style={{ textDecoration: "none", listStyle: "none" }}
-        >
-          <div
-            className="w-44 cursor-pointer h-1/12 px-10 py-2.5 mt-2 sm:w-44 sm:mt-5 lg:w-72 lg:h-16 flex items-center justify-center border border-transparent transition-colors duration-300 focus:bg-gray-300 focus:text-gray-800"
-            style={{ border: "1px solid #0F1C2E" }}
+        <div className="mt-6">
+          <Link
+            to="/contact"
+            style={{
+              textDecoration: "none",
+              fontStyle: "none",
+              color: "#0F1C2E",
+            }}
           >
-            <p className="font-lato text-base text-center sm:text-xl">
+            <button
+              style={{
+                border: "1px solid #0F1C2E",
+                borderRadius: "10px",
+                color: "#0F1C2E ",
+              }}
+              className="font-lato text-base w-40 h-10 lg:w-64 lg:h-14 lg:text-xl"
+            >
               {Constant.CONTACT_US}
-            </p>
-          </div>
-        </Link>
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );

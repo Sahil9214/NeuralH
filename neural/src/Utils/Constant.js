@@ -10,7 +10,7 @@ const Constant = {
   WE_HELP_YOU_TO_HARNESS_THE_POWER_OF_AI_FOR_A_BRIGHTER_TOMORROW:
     "We help you to harness the power of AI for a brighter tomorrow",
   ABOUT_US_CONTEXT:
-    "At NeuralHQ, we are committed to building responsible and human-centric AI systems that support your business day after day, offering solutions that are as dynamic and adaptable as the industries we serve.",
+    "At NeuralHQ we are committed to building responsible and human-centric AI systems that support your business day after day, offering solutions that are as dynamic and adaptable as the industries we serve.",
   ABOUT_US_OUR_TEAM:
     "Our team consists of passionate AI researchers, data scientists, engineers and visionaries dedicated to pushing the boundaries of AI's potential.",
   ABOUT_US_PAGE_DESCRIPTION:
@@ -20,15 +20,15 @@ const Constant = {
   //!OWNER NAME
   Owner_Name1: "Sandeep Gupta",
   Owner_Name2: "Amrit Anand",
-  Owner_Name3: "Mohsin Hasan Khan ",
-  Owner_Name4: "Prasanna Kakhandaki ",
+  Owner_Name3: "Mohsin Hasan Khan",
+  Owner_Name4: "Prasanna Kakhandaki",
   //!EMPLOYEE NAME
   TEAM_MEMBER4: "Utkarsh Singhal",
   TEAM_MEMBER3: "Rushikesh Bhomale",
   TEAM_MEMBER1: "Janhavi Singh",
   TEAM_MEMBER2: "Revanth MK",
   TEAM_MEMBER5: "Kushagra Bushan",
-  TEAM_MEMBER6: "Intern",
+  TEAM_MEMBER6: "Software Engineer",
 
   KNOW_MORE: "Know More",
   OUR_SOLUTIONS_CONTEXT:
@@ -76,8 +76,8 @@ const Constant = {
   EMPLOYEE_NAME3_DESIGNATION: "Data Engineer",
   EMPLOYEE_NAME4_DESIGNATION: "Software Engineer",
   EMPLOYEE_NAME5_DESIGNATION: "Deep Learning Researcher",
-  EMPLOYEE_NAME6_DESIGNATION: "Software Engineer",
-  EMPLOYEE_NAME7_DESIGNATION: "Software Engineer",
+  EMPLOYEE_NAME6_DESIGNATION: "Intern",
+  EMPLOYEE_NAME7_DESIGNATION: "Researcher Intern",
 
   // !OWNER DESIGNATION
 

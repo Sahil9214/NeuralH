@@ -1,11 +1,16 @@
 import Constant from "./Constant";
-
+import Revanth from "../Images/Revanth.jpg";
+import Deependra from "../Images/Deependra.png";
+import Jhanvi from "../Images/Janhavi_Singh.jpg";
+import Moshin from "../Images/Moshin.jpg";
+import utkarsh from "../Images/utkarshImage.png";
+import sandeep from "../Images/Sandeep.png";
 export const Owner = [
   {
     teamMember: Constant.Owner_Name1,
     Designation: Constant.SANDEEP_DESIGNATION,
     Linkedin: "https://www.linkedin.com/in/sandeep-gupta-847b4150/",
-    img: "https://github.com/Sahil9214/random-repo/assets/106021674/23b25c24-bac7-4b50-b5fa-814c034086eb",
+    img: sandeep,
     effect: "zoom-out",
   },
   {
@@ -19,7 +24,7 @@ export const Owner = [
     teamMember: Constant.Owner_Name3,
     Designation: Constant.MOSHIN_HASAN_KHAN_DESIGNATION,
     Linkedin: "https://www.linkedin.com/in/mohsin-hasan-khan-167167a9/",
-    img: "https://github.com/Sahil9214/random-repo/assets/106021674/f2b511a7-ffdd-4db1-833f-e46408ea8336",
+    img: Moshin,
     effect: "zoom-out",
   },
   {
@@ -37,7 +42,7 @@ export const Employees = [
     teamMember: Constant.TEAM_MEMBER1,
     Designation: Constant.EMPLOYEE_NAME1_DESIGNATION,
     Linkedin: "https://www.linkedin.com/in/janhavi023/",
-    img: "https://github.com/Sahil9214/random-repo/assets/106021674/bfd092e5-0ffa-439e-80a3-830165ae5020",
+    img: Jhanvi,
     // effect: "zoom-out",
   },
   {
@@ -45,7 +50,7 @@ export const Employees = [
     teamMember: Constant.TEAM_MEMBER2,
     Designation: Constant.EMPLOYEE_NAME2_DESIGNATION,
     Linkedin: "https://www.linkedin.com/in/revanth-mk-1a9013157/",
-    img: "https://github.com/Sahil9214/random-repo/assets/106021674/7b6e6209-7330-4a61-a1f2-0a9a18290920",
+    img: Revanth,
     // effect: "zoom-out",
   },
   {
@@ -53,7 +58,7 @@ export const Employees = [
     teamMember: Constant.TEAM_MEMBER3,
     Designation: Constant.EMPLOYEE_NAME3_DESIGNATION,
     Linkedin: "https://www.linkedin.com/in/rushikesh-bhomale-aa29a3158/",
-    img: "https://github.com/Sahil9214/random-repo/assets/106021674/77ac7cef-114b-4346-b898-ad5b1cffecf1",
+    img: "https://media.licdn.com/dms/image/D4E03AQFoxg8ofkCH-g/profile-displayphoto-shrink_400_400/0/1715070640048?e=1720656000&v=beta&t=t9yhFhZJbwf4_Wn1HIsK4oZPpmhyKO9YXw4A1DTz-vQ",
     // effect: "zoom-out",
   },
   {
@@ -61,15 +66,14 @@ export const Employees = [
     teamMember: Constant.TEAM_MEMBER4,
     Designation: Constant.EMPLOYEE_NAME4_DESIGNATION,
     Linkedin: "https://www.linkedin.com/in/utkarsh-singhal-3171b7182/",
-    img: "https://github.com/Sahil9214/random-repo/assets/106021674/b9473005-bf19-47d3-9902-c82dbf7a4044",
-    // effect: "zoom-out",
+    img: utkarsh,
   },
   //!Deependra
   {
-    teamMember: "Deependra kumar",
-    Designation: Constant.TEAM_MEMBER6,
-    Linkedin: "",
-    img: "https://github.com/Sahil9214/random-repo/assets/106021674/0ee088bc-0c57-430e-b67b-ce0c9e5e63a7",
+    teamMember: "Deependra Kumar",
+    Designation: "Intern",
+    Linkedin: "https://www.linkedin.com/in/deependrakrdk/",
+    img: Deependra,
     // effect: "zoom-out",
   },
   {

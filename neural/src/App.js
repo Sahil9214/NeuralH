@@ -4,7 +4,6 @@ import LoaderPart2 from "./Components/LoaderPart/LoaderPart2";
 
 import AllRouter from "./Routes/AllRouter";
 
-import "aos/dist/aos.css";
 import "./App.css";
 
 function App() {
@@ -36,20 +35,7 @@ function App() {
 
   return (
     <div className="App">
-      {showInitialLoader ? (
-        <LoaderPart2 /> // Render initial loading animation
-      ) : (
-        <>
-          {isLoading && <LoaderPart2 />}{" "}
-          {!isLoading && (
-            <>
-              <AllRouter />
-
-              {/* <p className="text-xl text-center">NeuralHQ@2024</p> */}
-            </>
-          )}
-        </>
-      )}
+      <AllRouter />
     </div>
   );
 }

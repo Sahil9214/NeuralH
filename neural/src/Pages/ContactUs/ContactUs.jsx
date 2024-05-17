@@ -3,31 +3,64 @@ import React, { useEffect, useState } from "react";
 import Constant from "../../Utils/Constant";
 import "./ContactUs.css";
 import Navbar from "../../Components/Navbar/Navbar";
-
-import Footer from "../../Components/Footer/Footer";
-
+import GlobalStyle from "../../Utils/color";
+import { useToast } from "@chakra-ui/react";
+import { useLocation, Link } from "react-router-dom";
+import linkedin from "../../Images/linkedin.png";
+import twitter from "../../Images/twitter1.png";
+import logo from "../../Images/LogoFooter.png";
 const ContactUs = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [mobile_number, setMobileNumber] = useState("");
   const [message, setMessage] = useState("");
+  const [errors, setErrors] = useState({});
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
+  const toast = useToast();
+  const { pathname } = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const handleSubmit = () => {
+    const newErrors = {};
     if (name.trim() === "") {
-      alert("Please type your name");
-      return;
-    } else if (!emailRegex.test(email)) {
-      alert("Please enter a valid email address");
-      return;
-    } else if (message.trim() === "") {
-      alert("Please type message");
+      newErrors.name = "Please type your name";
+    }
+    if (!emailRegex.test(email)) {
+      newErrors.email = "Please enter a valid email address";
+    }
+    if (message.trim() === "") {
+      newErrors.message = "Please enter the message";
+    }
+
+    if (Object.keys(newErrors).length > 0) {
+      console.log(newErrors, "newErrors****************");
+      setErrors(newErrors);
+
+      Object.keys(newErrors).forEach((key) => {
+        document.getElementById(key).classList.add("vibrate");
+        setTimeout(() => {
+          document.getElementById(key).classList.remove("vibrate");
+        }, 500);
+      });
+
+      const firstErrorKey = Object.keys(newErrors)[0];
+      const firstErrorMessage = newErrors[firstErrorKey];
+
+      toast({
+        title: "Error",
+        description: `${firstErrorMessage} in the form.`,
+        status: "error",
+        duration: 6000,
+        isClosable: true,
+        position: "top",
+      });
+
       return;
     }
+
+    setErrors({});
 
     fetch("https://neuralhq-master-backend.onrender.com/contact", {
       method: "POST",
@@ -39,64 +72,144 @@ const ContactUs = () => {
       .then((res) => res.json())
       .then((response) => {
         if (!response.requestStatus) alert(response.error);
-        else alert("notification: " + response.message);
+        else {
+          toast({
+            title: "Thank you",
+            description: "Your message was successfully sent",
+            status: "success",
+            duration: 9000,
+            isClosable: true,
+            position: "top",
+          });
+          setName("");
+          setEmail("");
+          setMessage("");
+          setMobileNumber("");
+        }
       })
       .catch((error) => {
         console.error("Error:", error.message);
       });
-    setName("");
-    setEmail("");
-    setMessage("");
-    setMobileNumber("");
   };
 
+  const handleChange = (setter, field) => (e) => {
+    setter(e.target.value);
+    setErrors((prevErrors) => {
+      const newErrors = { ...prevErrors };
+      delete newErrors[field];
+      return newErrors;
+    });
+  };
+  const smoothScrollTo = (target, offset) => {
+    const targetElement = document.querySelector(target);
+    const navbarHeight = document.querySelector(".navbar").offsetHeight;
+
+    let adjustedOffset = offset;
+
+    if (window.innerWidth < 768) {
+      adjustedOffset += 260;
+    }
+
+    if (targetElement && pathname === "/") {
+      const targetPosition =
+        targetElement.offsetTop - navbarHeight - adjustedOffset;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth",
+      });
+    } else if (pathname !== "/") {
+      localStorage.setItem("scrollTarget", target);
+      window.location.href = "/";
+    }
+  };
+
+  useEffect(() => {
+    const scrollTarget = localStorage.getItem("scrollTarget");
+
+    if (scrollTarget) {
+      if (window.innerWidth < 400) {
+        if (scrollTarget === "#solution") {
+          smoothScrollTo(scrollTarget, -600);
+        } else if (scrollTarget === "#casestudy") {
+          smoothScrollTo(scrollTarget, -4000);
+        } else if (scrollTarget === "#services") {
+          smoothScrollTo(scrollTarget, -740);
+        } else if (scrollTarget === "#about") {
+          smoothScrollTo(scrollTarget, -240);
+        }
+      } else {
+        smoothScrollTo(scrollTarget, -20);
+      }
+
+      setTimeout(() => {
+        localStorage.removeItem("scrollTarget");
+      }, 2000);
+    }
+  }, []);
   return (
     <>
-      <Navbar showNavs={false} />
-      <div
-        className="contact_us_container"
-        style={{ scrollSnapAlign: "start" }}
-      >
+      <Navbar showNavs={true} />
+      <div className="contact_us_container">
         <div className="input_box_contact_area">
           <p className="contact_us_heading">{Constant.CONTACT_US}</p>
-          <div>
+          <div className="input_group">
             <input
+              style={{ borderRadius: "10px" }}
+              id="name"
               value={name}
-              onChange={(e) => setName(e.target.value)}
+              onChange={handleChange(setName, "name")}
               type="text"
               placeholder={Constant.YOUR_NAME}
+              className={errors.name ? "error" : ""}
             />
+            {errors.name && <span className="error_mark">!</span>}
           </div>
           <br />
-          <div>
+          <div className="input_group">
             <input
+              style={{ borderRadius: "10px" }}
+              id="mobile_number"
               value={mobile_number}
-              onChange={(e) => setMobileNumber(e.target.value)}
+              onChange={handleChange(setMobileNumber, "mobile_number")}
               type="tel"
               placeholder={Constant.MOBILE_NUMBER}
               pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
             />
           </div>
           <br />
-          <div>
+          <div className="input_group">
             <input
+              style={{ borderRadius: "10px" }}
+              id="email"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={handleChange(setEmail, "email")}
               type="email"
               placeholder={Constant.EMAIL_ADDRESS}
+              className={errors.email ? "error" : ""}
             />
+            {errors.email && <span className="error_mark">!</span>}
           </div>
           <br />
-          <div>
+          <div className="input_group">
             <textarea
+              style={{ borderRadius: "10px" }}
+              id="message"
               value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              onChange={handleChange(setMessage, "message")}
               placeholder="Message"
+              className={errors.message ? "error" : ""}
             ></textarea>
+            {errors.message && <span className="error_mark_textArea">!</span>}
           </div>
+          <br />
 
           <div className="contact_button_div">
-            <button className="btn_contact_us" onClick={handleSubmit}>
+            <button
+              className="btn_contact_us"
+              style={{ borderRadius: "10px" }}
+              onClick={handleSubmit}
+            >
               {Constant.SUBMIT}
             </button>
           </div>
@@ -126,9 +239,129 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <Footer />
+      <footer className="footer_container" data-testid="footer">
+        <div className="footer_links_Logo">
+          <img
+            alt="footer_neuralhq_logo"
+            loading="lazy"
+            src={logo}
+            className="footer-logo-new"
+          />
+        </div>
+        <div className="footer_links_mainContainer">
+          <div className="footer_links_container">
+            <div>
+              <Link
+                onClick={() =>
+                  smoothScrollTo("#about", window.innerWidth < 768 ? -80 : -20)
+                }
+              >
+                <FooterLinks
+                  text={Constant.ABOUT_US}
+                  color={GlobalStyle.blue3}
+                />
+              </Link>
+              <Link
+                onClick={() =>
+                  smoothScrollTo(
+                    "#services",
+                    window.innerWidth < 768 ? -840 : -20
+                  )
+                }
+              >
+                <FooterLinks
+                  text={Constant.OUR_SERVICES}
+                  color={GlobalStyle.blue3}
+                />
+              </Link>
+              <Link
+                onClick={() =>
+                  smoothScrollTo(
+                    "#solution",
+                    window.innerWidth < 768 ? -280 : -20
+                  )
+                }
+              >
+                <FooterLinks
+                  text={Constant.OUR_SOLUTIONS}
+                  color={GlobalStyle.blue3}
+                />
+              </Link>
+            </div>
+            <div>
+              <Link
+                onClick={() =>
+                  smoothScrollTo(
+                    "#casestudy",
+                    window.innerWidth < 400 ? -2400 : -20
+                  )
+                }
+              >
+                <FooterLinks
+                  text={Constant.CASE_STUDIES}
+                  color={GlobalStyle.blue3}
+                  size={"18px"}
+                />
+              </Link>
+              <Link to="/contact">
+                <FooterLinks
+                  text={Constant.CONTACT_US}
+                  color={GlobalStyle.blue3}
+                  size={"18px"}
+                />
+              </Link>
+              <Link to="/about">
+                <FooterLinks
+                  text={Constant.OUR_TEAM}
+                  color={GlobalStyle.blue3}
+                />
+              </Link>
+            </div>
+          </div>
+          <div className="follow_us_social_media_platform">
+            <div className="footerlinks_components">
+              <p style={{ color: GlobalStyle.blue3 }} className="Follow_us_on">
+                {Constant.FOLLOW_US_ON}
+              </p>
+              <div className="footer_logos">
+                <a
+                  href="https://twitter.com/neuralhq"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={twitter}
+                    alt="twitter"
+                    className="footer_social_media"
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/neuralhq/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={linkedin}
+                    alt="linkedin"
+                    className="footer_social_media"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   );
 };
 
 export default ContactUs;
+function FooterLinks(props) {
+  return (
+    <div className="footer_text_links">
+      <p className="links_or_footer" style={{ color: props.color }}>
+        {props.text}
+      </p>
+    </div>
+  );
+}

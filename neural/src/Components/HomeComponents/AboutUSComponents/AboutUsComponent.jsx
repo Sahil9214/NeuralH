@@ -16,7 +16,7 @@ const AboutUsComponent = () => {
     >
       <div className="lg:w-4/6 xl:w-6/12 2xl:w-7/12  xl:mb-10 ">
         <p
-          className="font-lato text-lg md:text-xl lg:text-2xl "
+          className="font-lato text-xl md:text-xl lg:text-2xl "
           style={{ color: "#E0E0E0" }}
         >
           {Constant.ABOUT_US}
@@ -37,25 +37,27 @@ const AboutUsComponent = () => {
             {Constant.ABOUT_US_PAGE_DESCRIPTION}
           </p>
         </div>
-        <Link
-          to="/about"
-          style={{
-            textDecoration: "none",
-            fontStyle: "none",
-          }}
-        >
-          <div
-            className="w-40 h-10 mt-6 flex justify-center items-center md:w-48 md:h-16 md:mt-10 lg:w-64"
-            style={{ border: "1px solid #ACC2EE" }}
+        <div className="mt-6">
+          <Link
+            to="/about"
+            style={{
+              textDecoration: "none",
+              fontStyle: "none",
+              color: "#0F1C2E",
+            }}
           >
-            <p
-              className="font-lato text-bas md:text-xl lg:text-2xl"
-              style={{ color: "#ACC2EE" }}
+            <button
+              style={{
+                border: "1px solid rgb(172,194,238) ",
+                borderRadius: "10px",
+                color: "rgb(172,194,238) ",
+              }}
+              className="font-lato text-base w-40 h-10 lg:w-64 lg:h-14 lg:text-xl"
             >
-              Know More
-            </p>
-          </div>
-        </Link>
+              {Constant.KNOW_MORE}
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );
