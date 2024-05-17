@@ -107,7 +107,8 @@
     }
 .owner_paragraph{
     font-size: 16px;
-    color:#1E3A5F
+    color:#1E3A5F;
+    
 }
 .owner-linkedin{
     width: 20px!important;
@@ -167,9 +168,9 @@
     border-radius: 10px;
 }
 .designation_paragraph {
-    color:#1E3A5F;
-    font-size: 16px;
+    color: #1e3a5f;
     font-family: Lato;
+    font-size: 16px
 }
 
 .linkedin_image {
