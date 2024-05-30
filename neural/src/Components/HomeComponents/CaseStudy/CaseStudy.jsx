@@ -32,7 +32,6 @@ const CaseStudy = () => {
                   className="font-lato text-lg  leading-5  sm:text-2xl md:text-3xl lg:text-3xl  "
                   style={{
                     color: "#1E3A5F",
-                    fontFamily: "Lato",
                   }}
                 >
                   {el.case_study_name}

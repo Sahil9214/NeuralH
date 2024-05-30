@@ -5,6 +5,9 @@ import Jhanvi from "../Images/Janhavi_Singh.jpg";
 import Moshin from "../Images/Moshin.jpg";
 import utkarsh from "../Images/utkarshImage.png";
 import sandeep from "../Images/Sandeep.png";
+import rushikesh from "../Images/rushikesh.jpeg";
+import prasanna from "../Images/prasanna.jpeg";
+import kushagra2 from "../Images/kushagra2.jpeg";
 export const Owner = [
   {
     teamMember: Constant.Owner_Name1,
@@ -30,8 +33,9 @@ export const Owner = [
   {
     teamMember: Constant.Owner_Name4,
     Designation: Constant.PRASANNA_KAKHANDAKI_DESIGNATION,
+    img: prasanna,
     Linkedin: "https://www.linkedin.com/in/prasannapk/",
-    img: "https://media.licdn.com/dms/image/D5603AQFNEFYFmh7LLg/profile-displayphoto-shrink_800_800/0/1686716285921?e=1720051200&v=beta&t=OdrueRGKd2c42nyOGQrrbuU6qeVz3wIjty0gdMqrbYY",
+    // img: "https://media.licdn.com/dms/image/D5603AQFNEFYFmh7LLg/profile-displayphoto-shrink_800_800/0/1686716285921?e=1720051200&v=beta&t=OdrueRGKd2c42nyOGQrrbuU6qeVz3wIjty0gdMqrbYY",
     effect: "zoom-out",
   },
 ];
@@ -58,7 +62,8 @@ export const Employees = [
     teamMember: Constant.TEAM_MEMBER3,
     Designation: Constant.EMPLOYEE_NAME3_DESIGNATION,
     Linkedin: "https://www.linkedin.com/in/rushikesh-bhomale-aa29a3158/",
-    img: "https://media.licdn.com/dms/image/D4E03AQFoxg8ofkCH-g/profile-displayphoto-shrink_400_400/0/1715070640048?e=1720656000&v=beta&t=t9yhFhZJbwf4_Wn1HIsK4oZPpmhyKO9YXw4A1DTz-vQ",
+    img: rushikesh,
+    // img: "https://media.licdn.com/dms/image/D4E03AQFoxg8ofkCH-g/profile-displayphoto-shrink_400_400/0/1715070640048?e=1720656000&v=beta&t=t9yhFhZJbwf4_Wn1HIsK4oZPpmhyKO9YXw4A1DTz-vQ",
     // effect: "zoom-out",
   },
   {
@@ -81,7 +86,8 @@ export const Employees = [
     teamMember: Constant.TEAM_MEMBER5,
     Designation: "Research Intern",
     Linkedin: "https://www.linkedin.com/in/kushagrabhushan/",
-    img: "https://media.licdn.com/dms/image/D4D03AQESqGj9e6t1zQ/profile-displayphoto-shrink_400_400/0/1687593224479?e=1720051200&v=beta&t=rN0TNfRs6iAVcQoIaqu7FV_F2Mfl-ab-EJ4KzGvFW6Y",
+    img: kushagra2,
+    // img: "https://media.licdn.com/dms/image/D4D03AQESqGj9e6t1zQ/profile-displayphoto-shrink_400_400/0/1687593224479?e=1720051200&v=beta&t=rN0TNfRs6iAVcQoIaqu7FV_F2Mfl-ab-EJ4KzGvFW6Y",
     // effect: "zoom-out",
   },
 ];

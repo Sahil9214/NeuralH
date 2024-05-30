@@ -51,6 +51,7 @@ textarea::placeholder {
  
   text-indent: 20px; 
   font-family: Lato, Arial, sans-serif;
+  margin-left: 10px;
 
 }
 textarea::placeholder{
@@ -128,7 +129,10 @@ margin-left: -50%;
     75% { transform: translateX(-2px); }
     100% { transform: translateX(0); }
   }
-  
+
+.btn_contact_us{
+    margin:auto;
+}
 @media screen and (max-width:1124px ) and (min-width:768px){
     .contact_us_container{
     flex-direction: column;
