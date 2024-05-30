@@ -42,22 +42,25 @@ border:1px solid #374357;
 }
 ::placeholder {
     color: #e0e0e0; /* Placeholder text color */
-    text-indent: 20px; /* Adjusted indentation */
+     /* Adjusted indentation */
     font-size: 14px; /* Adjusted font size */
   }
 input::placeholder,
 textarea::placeholder {
   color: #E0E0E0; /* Placeholder text color */
  
-  text-indent: 20px; 
+ 
   font-family: Lato, Arial, sans-serif;
-  margin-left: 10px;
+
 
 }
 textarea::placeholder{
     font-size: 18px;
 }
+input:placeholder-shown , textarea:placeholder-shown{
+    padding-left: 1em;
 
+}
 
 .btn_contact_us{
 width: 200px;
