@@ -8,6 +8,7 @@ import sandeep from "../Images/Sandeep.png";
 import rushikesh from "../Images/rushikesh.jpeg";
 import prasanna from "../Images/prasanna.jpeg";
 import kushagra2 from "../Images/kushagra2.jpeg";
+import amrit from "../Images/amrit_website.jpg";
 export const Owner = [
   {
     teamMember: Constant.Owner_Name1,
@@ -20,8 +21,9 @@ export const Owner = [
     teamMember: Constant.Owner_Name2,
     Designation: Constant.AMRIT_DESIGNATION,
     Linkedin: "https://www.linkedin.com/in/amrit-anand-51550315/",
-    img: "https://media.licdn.com/dms/image/C5603AQEkDdOmqHkVbQ/profile-displayphoto-shrink_800_800/0/1660749708216?e=1718841600&v=beta&t=1zhj7cTFsuOQuE0HzVdQLePvkE9h69lAaoVZcIDGLos",
+    // img: "https://media.licdn.com/dms/image/C5603AQEkDdOmqHkVbQ/profile-displayphoto-shrink_800_800/0/1660749708216?e=1718841600&v=beta&t=1zhj7cTFsuOQuE0HzVdQLePvkE9h69lAaoVZcIDGLos",
     effect: "zoom-out",
+    img: amrit,
   },
   {
     teamMember: Constant.Owner_Name3,
