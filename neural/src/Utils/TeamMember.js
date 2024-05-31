@@ -9,6 +9,7 @@ import rushikesh from "../Images/rushikesh.jpeg";
 import prasanna from "../Images/prasanna.jpeg";
 import kushagra2 from "../Images/kushagra2.jpeg";
 import amrit from "../Images/amrit_website.jpg";
+import Revant1 from "../Images/Revanth.png";
 export const Owner = [
   {
     teamMember: Constant.Owner_Name1,
@@ -56,7 +57,7 @@ export const Employees = [
     teamMember: Constant.TEAM_MEMBER2,
     Designation: Constant.EMPLOYEE_NAME2_DESIGNATION,
     Linkedin: "https://www.linkedin.com/in/revanth-mk-1a9013157/",
-    img: Revanth,
+    img: Revant1,
     // effect: "zoom-out",
   },
   {
