@@ -9,6 +9,7 @@ import { useLocation, Link } from "react-router-dom";
 import linkedin from "../../Images/linkedin.png";
 import twitter from "../../Images/twitter1.png";
 import logo from "../../Images/LogoFooter.png";
+import Footer from "../../Components/Footer/Footer";
 const ContactUs = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -150,207 +151,214 @@ const ContactUs = () => {
   return (
     <>
       <Navbar showNavs={true} />
-      <div className="contact_us_container">
-        <div className="input_box_contact_area">
-          <p className="contact_us_heading">{Constant.CONTACT_US}</p>
-          <div className="input_group">
-            <input
-              style={{ borderRadius: "10px" }}
-              id="name"
-              value={name}
-              onChange={handleChange(setName, "name")}
-              type="text"
-              placeholder={Constant.YOUR_NAME}
-              className={errors.name ? "error" : ""}
-            />
-            {errors.name && <span className="error_mark">!</span>}
-          </div>
-          <br />
-          <div className="input_group">
-            <input
-              style={{ borderRadius: "10px" }}
-              id="mobile_number"
-              value={mobile_number}
-              onChange={handleChange(setMobileNumber, "mobile_number")}
-              type="tel"
-              placeholder={Constant.MOBILE_NUMBER}
-              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-            />
-          </div>
-          <br />
-          <div className="input_group">
-            <input
-              style={{ borderRadius: "10px" }}
-              id="email"
-              value={email}
-              onChange={handleChange(setEmail, "email")}
-              type="email"
-              placeholder={Constant.EMAIL_ADDRESS}
-              className={errors.email ? "error" : ""}
-            />
-            {errors.email && <span className="error_mark">!</span>}
-          </div>
-          <br />
-          <div className="input_group">
-            <textarea
-              style={{ borderRadius: "10px" }}
-              id="message"
-              value={message}
-              onChange={handleChange(setMessage, "message")}
-              placeholder="Message"
-              className={errors.message ? "error" : ""}
-            ></textarea>
-            {errors.message && <span className="error_mark_textArea">!</span>}
-          </div>
-          <br />
-
-          <div className="contact_button_div">
-            <button
-              className="btn_contact_us"
-              style={{ borderRadius: "10px" }}
-              onClick={handleSubmit}
-            >
-              {Constant.SUBMIT}
-            </button>
-          </div>
-        </div>
-        {/* for map filed and address */}
-        <div className="contact_us_address_map">
-          <div>
-            <address className="address">{Constant.NEURAL_HQ}</address>
-            <address className="address">{Constant.ADDRESS1}</address>
-            <address className="address">{Constant.ADDRESS2}</address>
-            <address className="address">{Constant.ADDRESS3}</address>
-            <p className="address">{Constant.SANDEEP_SIR_EMAIL_ADDRESS}</p>
-            <p className="mobile_number_contact_us">
-              {Constant.SANDEEP_SIR_MOBILE_NUMBER}
-            </p>
-          </div>
-
-          <div className="embeded_map_container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3889.248800213581!2d77.56281402507508!3d12.891716887416372!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15592ff947db%3A0xe0b34b19c276873!2sCentury%20Central%20Tower-E%2C%20CENTURY%20CENTRAL%2C%20Kanakapura%20Rd%2C%20Mango%20Garden%20Layout%2C%20Bikasipura%2C%20Bengaluru%2C%20Karnataka%20560078!5e0!3m2!1sen!2sin!4v1714137682448!5m2!1sen!2sin"
-              className="embeded_map"
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-
-      <footer className="footer_container" data-testid="footer">
-        <div className="footer_links_Logo">
-          <img
-            alt="footer_neuralhq_logo"
-            loading="lazy"
-            src={logo}
-            className="footer-logo-new"
-          />
-        </div>
-        <div className="footer_links_mainContainer">
-          <div className="footer_links_container">
-            <div>
-              <Link
-                onClick={() =>
-                  smoothScrollTo("#about", window.innerWidth < 768 ? -80 : -20)
-                }
-              >
-                <FooterLinks
-                  text={Constant.ABOUT_US}
-                  color={GlobalStyle.blue3}
-                />
-              </Link>
-              <Link
-                onClick={() =>
-                  smoothScrollTo(
-                    "#services",
-                    window.innerWidth < 768 ? -840 : -20
-                  )
-                }
-              >
-                <FooterLinks
-                  text={Constant.OUR_SERVICES}
-                  color={GlobalStyle.blue3}
-                />
-              </Link>
-              <Link
-                onClick={() =>
-                  smoothScrollTo(
-                    "#solution",
-                    window.innerWidth < 768 ? -280 : -20
-                  )
-                }
-              >
-                <FooterLinks
-                  text={Constant.OUR_SOLUTIONS}
-                  color={GlobalStyle.blue3}
-                />
-              </Link>
+      <div className="contact-matter">
+        <div className="contact_us_container">
+          <div className="input_box_contact_area">
+            <p className="contact_us_heading">{Constant.CONTACT_US}</p>
+            <div className="input_group">
+              <input
+                style={{ borderRadius: "10px" }}
+                id="name"
+                value={name}
+                onChange={handleChange(setName, "name")}
+                type="text"
+                placeholder={Constant.YOUR_NAME}
+                className={errors.name ? "error" : ""}
+              />
+              {errors.name && <span className="error_mark">!</span>}
             </div>
-            <div>
-              <Link
-                onClick={() =>
-                  smoothScrollTo(
-                    "#casestudy",
-                    window.innerWidth < 400 ? -2400 : -20
-                  )
-                }
+            <br />
+            <div className="input_group">
+              <input
+                style={{ borderRadius: "10px" }}
+                id="mobile_number"
+                value={mobile_number}
+                onChange={handleChange(setMobileNumber, "mobile_number")}
+                type="tel"
+                placeholder={Constant.MOBILE_NUMBER}
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+              />
+            </div>
+            <br />
+            <div className="input_group">
+              <input
+                style={{ borderRadius: "10px" }}
+                id="email"
+                value={email}
+                onChange={handleChange(setEmail, "email")}
+                type="email"
+                placeholder={Constant.EMAIL_ADDRESS}
+                className={errors.email ? "error" : ""}
+              />
+              {errors.email && <span className="error_mark">!</span>}
+            </div>
+            <br />
+            <div className="input_group">
+              <textarea
+                style={{ borderRadius: "10px" }}
+                id="message"
+                value={message}
+                onChange={handleChange(setMessage, "message")}
+                placeholder="Message"
+                className={errors.message ? "error" : ""}
+              ></textarea>
+              {errors.message && <span className="error_mark_textArea">!</span>}
+            </div>
+            <br />
+
+            <div className="contact_button_div">
+              <button
+                className="btn_contact_us"
+                style={{ borderRadius: "10px" }}
+                onClick={handleSubmit}
               >
-                <FooterLinks
-                  text={Constant.CASE_STUDIES}
-                  color={GlobalStyle.blue3}
-                  size={"18px"}
-                />
-              </Link>
-              <Link to="/contact">
-                <FooterLinks
-                  text={Constant.CONTACT_US}
-                  color={GlobalStyle.blue3}
-                  size={"18px"}
-                />
-              </Link>
-              <Link to="/about">
-                <FooterLinks
-                  text={Constant.OUR_TEAM}
-                  color={GlobalStyle.blue3}
-                />
-              </Link>
+                {Constant.SUBMIT}
+              </button>
             </div>
           </div>
-          <div className="follow_us_social_media_platform">
-            <div className="footerlinks_components">
-              <p style={{ color: GlobalStyle.blue3 }} className="Follow_us_on">
-                {Constant.FOLLOW_US_ON}
+          {/* for map filed and address */}
+          <div className="contact_us_address_map">
+            <div>
+              <address className="address">{Constant.NEURAL_HQ}</address>
+              <address className="address">{Constant.ADDRESS1}</address>
+              <address className="address">{Constant.ADDRESS2}</address>
+              <address className="address">{Constant.ADDRESS3}</address>
+              <p className="address">{Constant.SANDEEP_SIR_EMAIL_ADDRESS}</p>
+              <p className="mobile_number_contact_us">
+                {Constant.SANDEEP_SIR_MOBILE_NUMBER}
               </p>
-              <div className="footer_logos">
-                <a
-                  href="https://twitter.com/neuralhq"
-                  target="_blank"
-                  rel="noopener noreferrer"
+            </div>
+
+            <div className="embeded_map_container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3889.248800213581!2d77.56281402507508!3d12.891716887416372!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15592ff947db%3A0xe0b34b19c276873!2sCentury%20Central%20Tower-E%2C%20CENTURY%20CENTRAL%2C%20Kanakapura%20Rd%2C%20Mango%20Garden%20Layout%2C%20Bikasipura%2C%20Bengaluru%2C%20Karnataka%20560078!5e0!3m2!1sen!2sin!4v1714137682448!5m2!1sen!2sin"
+                className="embeded_map"
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <footer className="footer_container1" data-testid="footer">
+          <div className="footer_links_Logo1">
+            <img
+              alt="footer_neuralhq_logo"
+              loading="lazy"
+              src={logo}
+              className="footer-logo-new"
+            />
+          </div>
+          <div className="footer_links_mainContainer1">
+            <div className="footer_links_container1">
+              <div>
+                <Link
+                  onClick={() =>
+                    smoothScrollTo(
+                      "#about",
+                      window.innerWidth < 768 ? -80 : -20
+                    )
+                  }
                 >
-                  <img
-                    src={twitter}
-                    alt="twitter"
-                    className="footer_social_media"
+                  <FooterLinks
+                    text={Constant.ABOUT_US}
+                    color={GlobalStyle.blue3}
                   />
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/neuralhq/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                </Link>
+                <Link
+                  onClick={() =>
+                    smoothScrollTo(
+                      "#services",
+                      window.innerWidth < 768 ? -840 : -20
+                    )
+                  }
                 >
-                  <img
-                    src={linkedin}
-                    alt="linkedin"
-                    className="footer_social_media"
+                  <FooterLinks
+                    text={Constant.OUR_SERVICES}
+                    color={GlobalStyle.blue3}
                   />
-                </a>
+                </Link>
+                <Link
+                  onClick={() =>
+                    smoothScrollTo(
+                      "#solution",
+                      window.innerWidth < 768 ? -280 : -20
+                    )
+                  }
+                >
+                  <FooterLinks
+                    text={Constant.OUR_SOLUTIONS}
+                    color={GlobalStyle.blue3}
+                  />
+                </Link>
+              </div>
+              <div>
+                <Link
+                  onClick={() =>
+                    smoothScrollTo(
+                      "#casestudy",
+                      window.innerWidth < 400 ? -2400 : -20
+                    )
+                  }
+                >
+                  <FooterLinks
+                    text={Constant.CASE_STUDIES}
+                    color={GlobalStyle.blue3}
+                    size={"18px"}
+                  />
+                </Link>
+                <Link to="/contact">
+                  <FooterLinks
+                    text={Constant.CONTACT_US}
+                    color={GlobalStyle.blue3}
+                    size={"18px"}
+                  />
+                </Link>
+                <Link to="/about">
+                  <FooterLinks
+                    text={Constant.OUR_TEAM}
+                    color={GlobalStyle.blue3}
+                  />
+                </Link>
+              </div>
+            </div>
+            <div className="follow_us_social_media_platform1">
+              <div className="footerlinks_components1">
+                <p
+                  style={{ color: GlobalStyle.blue3 }}
+                  className="Follow_us_on"
+                >
+                  {Constant.FOLLOW_US_ON}
+                </p>
+                <div className="footer_logos">
+                  <a
+                    href="https://twitter.com/neuralhq"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={twitter}
+                      alt="twitter"
+                      className="footer_social_media"
+                    />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/neuralhq/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={linkedin}
+                      alt="linkedin"
+                      className="footer_social_media"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </>
   );
 };
@@ -358,8 +366,8 @@ const ContactUs = () => {
 export default ContactUs;
 function FooterLinks(props) {
   return (
-    <div className="footer_text_links">
-      <p className="links_or_footer" style={{ color: props.color }}>
+    <div className="footer_text_links1">
+      <p className="links_or_footer1" style={{ color: props.color }}>
         {props.text}
       </p>
     </div>
