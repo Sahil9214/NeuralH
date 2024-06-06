@@ -51,8 +51,8 @@ const Home = () => {
                 <GenerativeAi />
                 <OurService />
                 <CaseStudy />
+                <Footer />
               </div>
-              <Footer />
             </>
           )}
         </>

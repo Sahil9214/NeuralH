@@ -58,7 +58,7 @@ function Footer() {
     <footer
       className="footer_container"
       data-testid="footer"
-      style={{ scrollSnapAlign: `${path}` }}
+      style={{ scrollSnapAlign: "end" }}
     >
       <div className="footer_links_Logo">
         <img

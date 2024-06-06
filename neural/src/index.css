@@ -4,7 +4,7 @@
 :root{
   scroll-snap-type:y mandatory;
   scroll-padding-top:40px;
-  scroll-padding-bottom: -80px;
+  /* scroll-padding-bottom: -80px; */
   scroll-snap-stop: always;
 }
 

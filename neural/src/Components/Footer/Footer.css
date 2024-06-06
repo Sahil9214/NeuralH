@@ -4,6 +4,8 @@
     align-items: center;
     padding: 30px 123px;
     background: linear-gradient(90deg, #203B60 0%, #4C648B 100%);
+    height: auto;
+  
 }
 
 .footer_links_Logo {
@@ -56,6 +58,10 @@
 .footer_links_container a {
     text-decoration: none;
     list-style: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
