@@ -71,28 +71,23 @@ const Home = () => {
         <title>NeuralHQ.ai</title>
         <meta
           name="description"
-          content="NeuralHQ offers cutting-edge AI solutions to empower businesses with advanced tools and technologies. At NeuralHQ, we are committed to building responsible and human-centric AI systems..."
+          content="NeuralHQ.ai specializes in AI solutions and services to enhance business operations and customer experiences. Discover our innovative AI technology."
         />
-        <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="NeuralHQ.ai | Pioneering AI Solutions for Businesses"
+          content="Innovative AI Solutions - NeuralHQ.ai"
         />
         <meta
           property="og:description"
-          content="Discover NeuralHQ.ai's bespoke AI solutions that transform businesses. From automation to insights, our services are crafted to drive growth and efficiency."
+          content="Empower your business with NeuralHQ.ai's cutting-edge AI solutions. From machine learning to data analytics, we offer comprehensive AI services."
         />
-        {/* End Facebook tags */}
-        {/* Twitter tags */}
-        <meta name="twitter:creator" content="@NeuralHQ" />
-        <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="NeuralHQ.ai | Pioneering AI Solutions for Businesses"
+          content="NeuralHQ.ai - Your Partner in AI Innovation"
         />
         <meta
           name="twitter:description"
-          content="Explore NeuralHQ.ai's custom AI solutions that empower businesses to innovate and thrive. Join us in shaping the future with responsible AI technology."
+          content="Join forces with NeuralHQ.ai to revolutionize your business with advanced AI solutions tailored to your needs."
         />
       </Helmet>
       {initialLoad && <LoaderPart2 />} {/* Show loader only on initial load */}

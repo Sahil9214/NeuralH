@@ -78,26 +78,26 @@ const Introduction = ({ scrollToAbout }) => {
         </div>
         {/* Content Container */}
         <div className="px-4 mt-4 sm:w-3/5 md:w-3/5 lg:ml-16 lg:w-3/5  ">
-          <p
+          <h1
             className="font-lato text-2xl md:text-4xl lg:text-5xl xl:text-5xl  2xl:text-5xl xl:mb-4"
             style={{ color: "#4D658D" }}
           >
             {Constant.POWERING_TRANSFORMATION_WITH}
-          </p>
-          <p
+          </h1>
+          <h2
             className="font-lato text-3xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl  "
             style={{ color: "#1E3A5F" }}
           >
             {Constant.ARTIFICIAL_INTELLIGENCE}
-          </p>
-          <p
+          </h2>
+          <h3
             style={{ color: "#374357" }}
             className="font-lato mt-7 md:text-xl xl:text-2xl"
           >
             {
               Constant.WE_HELP_YOU_TO_HARNESS_THE_POWER_OF_AI_FOR_A_BRIGHTER_TOMORROW
             }
-          </p>
+          </h3>
           <div className="mt-6">
             <Link
               to="/contact"
