@@ -117,13 +117,13 @@ const Introduction = ({ scrollToAbout }) => {
           </div>
         </div>
       </div>
-      {screenSize > 1024 ? (
+      {/* {screenSize > 1024 ? (
         <div>
           <h1 className="font-lato text-center mt-6">{Constant.SCROLL}</h1>
         </div>
       ) : (
         <div></div>
-      )}
+      )} */}
     </div>
   );
 };

@@ -5,6 +5,7 @@ import LoaderPart2 from "./Components/LoaderPart/LoaderPart2";
 import AllRouter from "./Routes/AllRouter";
 
 import "./App.css";
+import { Helmet } from "react-helmet-async";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);

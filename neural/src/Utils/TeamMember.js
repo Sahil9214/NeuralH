@@ -1,14 +1,14 @@
 import Constant from "./Constant";
-import Revanth from "../Images/Revanth.jpg";
+
 import Deependra from "../Images/Deependra.png";
-import Jhanvi from "../Images/Janhavi_Singh.jpg";
-import Moshin from "../Images/Moshin.jpg";
+import Jhanvi from "../Images/Janhavi_Singh.png";
+import Moshin from "../Images/Moshin.png";
 import utkarsh from "../Images/utkarshImage.png";
 import sandeep from "../Images/Sandeep.png";
-import rushikesh from "../Images/rushikesh.jpeg";
-import prasanna from "../Images/prasanna.jpeg";
-import kushagra2 from "../Images/kushagra2.jpeg";
-import amrit from "../Images/amrit_website.jpg";
+import rushikesh from "../Images/rushikesh.png";
+import prasanna from "../Images/prasanna.png";
+import kushagra2 from "../Images/kushagra2.png";
+import amrit from "../Images/amrit_website.png";
 import Revant1 from "../Images/Revanth.png";
 export const Owner = [
   {
