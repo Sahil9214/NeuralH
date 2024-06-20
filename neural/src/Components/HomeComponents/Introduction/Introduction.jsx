@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Constant from "../../../Utils/Constant";
 import "./Introduction.css";
 import IntroductionImage from "../../../Images/Introduction-img.png";
-import file2 from "../../../Images/introduction-mobile.png";
+import file2 from "../../../Images/introduction-mobil.png";
 
 const TypingText = ({ text }) => {
   const [displayText, setDisplayText] = useState("");
