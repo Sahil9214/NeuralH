@@ -79,7 +79,7 @@ export const Employees = [
   //!Deependra
   {
     teamMember: "Deependra Kumar",
-    Designation: "Intern",
+    Designation: Constant.EMPLOYEE_NAME6_DESIGNATION,
     Linkedin: "https://www.linkedin.com/in/deependrakrdk/",
     img: Deependra,
     // effect: "zoom-out",

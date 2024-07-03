@@ -76,13 +76,13 @@ const Constant = {
   EMPLOYEE_NAME3_DESIGNATION: "Data Engineer",
   EMPLOYEE_NAME4_DESIGNATION: "Software Engineer",
   EMPLOYEE_NAME5_DESIGNATION: "Deep Learning Researcher",
-  EMPLOYEE_NAME6_DESIGNATION: "Intern",
+  EMPLOYEE_NAME6_DESIGNATION: "Software Engineer",
   EMPLOYEE_NAME7_DESIGNATION: "Researcher Intern",
 
   // !OWNER DESIGNATION
 
-  SANDEEP_DESIGNATION: "CEO",
-  AMRIT_DESIGNATION: "CTO",
+  SANDEEP_DESIGNATION: "Chief Executive Officer",
+  AMRIT_DESIGNATION: "Chief Technology Officer",
   MOSHIN_HASAN_KHAN_DESIGNATION: "Chief Scientist",
   PRASANNA_KAKHANDAKI_DESIGNATION: "Chief Product Officer",
   SCROLL: "Scroll",
