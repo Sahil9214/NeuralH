@@ -63,7 +63,7 @@ const ContactUs = () => {
 
     setErrors({});
 
-    fetch("https://neuralhq-master-backend.onrender.com/contact", {
+    fetch("https://neuralhq-master-backend-6yifzhtasq-el.a.run.app/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
