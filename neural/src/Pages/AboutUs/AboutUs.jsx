@@ -111,29 +111,18 @@ const AboutUSTeam = () => {
                 <p className="team_member">{team.teamMember}</p>
                 <div className="description_of_desgination">
                   <p className="designation_paragraph">{team.Designation}</p>
-                  {team.teamMember === "Deependra Kumar" ? (
+
+                  <a
+                    href={team.Linkedin}
+                    target="_blank"
+                    style={{ cursor: "pointer" }}
+                  >
                     <img
                       src={linkedin}
                       alt="linkedin-img"
                       className="owner-linkedin"
                     />
-                  ) : (
-                    <a
-                      href={
-                        team.teamMember === "Deependra Kumar"
-                          ? "# "
-                          : team.Linkedin
-                      }
-                      target="_blank"
-                      style={{ cursor: "pointer" }}
-                    >
-                      <img
-                        src={linkedin}
-                        alt="linkedin-img"
-                        className="owner-linkedin"
-                      />
-                    </a>
-                  )}
+                  </a>
                 </div>
               </div>
             ))}
