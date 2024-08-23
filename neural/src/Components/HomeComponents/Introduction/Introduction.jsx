@@ -5,33 +5,32 @@ import "./Introduction.css";
 import IntroductionImage from "../../../Images/Introduction-img.png";
 import file2 from "../../../Images/introduction-mobil.png";
 
-const TypingText = ({ text }) => {
-  const [displayText, setDisplayText] = useState("");
+// const TypingText = ({ text }) => {
+//   const [displayText, setDisplayText] = useState("");
 
-  useEffect(() => {
-    let currentIndex = 0;
-    const typingInterval = setInterval(() => {
-      if (currentIndex <= text.length) {
-        setDisplayText(text.substring(0, currentIndex));
-        currentIndex++;
-      } else {
-        clearInterval(typingInterval);
-      }
-    }, 50);
+//   useEffect(() => {
+//     let currentIndex = 0;
+//     const typingInterval = setInterval(() => {
+//       if (currentIndex <= text.length) {
+//         setDisplayText(text.substring(0, currentIndex));
+//         currentIndex++;
+//       } else {
+//         clearInterval(typingInterval);
+//       }
+//     }, 50);
 
-    return () => clearInterval(typingInterval);
-  }, [text]);
+//     return () => clearInterval(typingInterval);
+//   }, [text]);
 
-  return (
-    <p className="text-base mt-4 h-9 sm:text-xl md:text-base lg:text-2xl">
-      {displayText}
-    </p>
-  );
-};
+//   return (
+//     <p className="text-base mt-4 h-9 sm:text-xl md:text-base lg:text-2xl">
+//       {displayText}
+//     </p>
+//   );
+// };
 
 const Introduction = ({ scrollToAbout }) => {
   const [screenSize, setScreenSize] = useState(window.innerWidth);
-  const introductionRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -80,18 +79,18 @@ const Introduction = ({ scrollToAbout }) => {
         <div className="px-4 mt-4 sm:w-3/5 md:w-3/5 lg:ml-16 lg:w-3/5  ">
           <h1
             className="font-lato text-2xl md:text-4xl lg:text-5xl xl:text-5xl  2xl:text-5xl xl:mb-4"
-            style={{ color: "#4D658D" }}
+            style={{ color: "var(--introduction-heading-color)" }}
           >
             {Constant.POWERING_TRANSFORMATION_WITH}
           </h1>
           <h2
             className="font-lato text-3xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl  "
-            style={{ color: "#1E3A5F" }}
+            style={{ color: "var(  --introduction-sub-heading)" }}
           >
             {Constant.ARTIFICIAL_INTELLIGENCE}
           </h2>
           <h3
-            style={{ color: "#374357" }}
+            style={{ color: "var(--introudction-sub-text)" }}
             className="font-lato mt-7 md:text-xl xl:text-2xl"
           >
             {
@@ -104,11 +103,14 @@ const Introduction = ({ scrollToAbout }) => {
               style={{
                 textDecoration: "none",
                 fontStyle: "none",
-                color: "#0F1C2E",
+                color: "var(--case-study-border-color)",
               }}
             >
               <button
-                style={{ border: "1px solid #0F1C2E ", borderRadius: "10px" }}
+                style={{
+                  border: "1px solid var(--case-study-border-color) ",
+                  borderRadius: "10px",
+                }}
                 className="font-lato text-base w-40 h-10 lg:w-64 lg:h-14 lg:text-xl"
               >
                 {Constant.CONTACT_US}

@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 30px 123px;
-    background: linear-gradient(90deg, #203B60 0%, #4C648B 100%);
+    background:var(--background-color);
     height: auto;
   
 }

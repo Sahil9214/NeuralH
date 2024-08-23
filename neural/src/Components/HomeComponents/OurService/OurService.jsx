@@ -8,7 +8,7 @@ const OurService = () => {
     <div
       className="h-full py-16 px-4 lg:h-screen lg:px-5 lg:py-10 xl:h-screen xl:px-6 xl:py-10   2xl:px-8 2xl:h-screen xl:flex xl:justify-center xl:items-center"
       style={{
-        background: "linear-gradient(90deg, #203B60 0%, #4C648B 100%)",
+        background: "var(--background-color)",
         scrollSnapAlign: "start",
         scrollPaddingTop: "100px",
       }}
@@ -17,7 +17,7 @@ const OurService = () => {
       <div>
         <h1
           className="font-lato text-3xl mb-0 text-center sm:text-5xl sm:py-6 lg:text-6xl xl:text-5xl   xl:py-0 "
-          style={{ color: "#E0E0E0" }}
+          style={{ color: "var(--our-service-heading-color)" }}
         >
           {Constant.OUR_SERVICES}
         </h1>
@@ -49,7 +49,9 @@ function InnerContainer({ image, heading, description }) {
       className=" rounded-[20px] py-10 pl-5 pr-6 mt-6 
        lg:flex lg:flex-col lg:w-11/12 lg:h-5/6 lg:m-auto lg:justify-between 
        xl:flex xl:flex-col xl:items-start xl:py-6 xl:pl-10 xl:pr-8 xl:w-9/12 xl:m-auto xl:9/12 xl:h-[490px] "
-      style={{ backgroundColor: "#fff" }}
+      style={{
+        backgroundColor: "var( --our-service-content-background-color)",
+      }}
     >
       <div className="border-4 border-transparent">
         <img

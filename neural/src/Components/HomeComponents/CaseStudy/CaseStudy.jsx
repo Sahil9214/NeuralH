@@ -15,7 +15,7 @@ const CaseStudy = () => {
         <div>
           <h1
             className="font-lato text-3xl  text-center sm:text-5xl sm:py-6 lg:text-5xl xl:text-5xl xl:mb-14   "
-            style={{ color: "#4D658D" }}
+            style={{ color: "var(--case-study-heading-color)" }}
           >
             {Constant.CASE_STUDIES}
           </h1>
@@ -26,12 +26,12 @@ const CaseStudy = () => {
               <div
                 key={i}
                 className=" rounded-[20px] flex border border-slate-300 px-2 py-4 justify-between items-center gap-8 mt-5 sm:py-8 sm:px-4 lg:py-10 "
-                style={{ border: "1px solid #0F1C2E" }}
+                style={{ border: "1px solid var(--case-study-border-color)" }}
               >
                 <p
                   className="font-lato text-lg  leading-5  sm:text-2xl md:text-3xl lg:text-3xl  "
                   style={{
-                    color: "#1E3A5F",
+                    color: "var(--case-study-content-color)",
                   }}
                 >
                   {el.case_study_name}
@@ -49,12 +49,12 @@ const CaseStudy = () => {
                     height="59"
                     rx="29.5"
                     fill="white"
-                    stroke="#0F1C2E"
+                    stroke="var(--case-study-border-color)"
                   />
                   <g clipPath="url(#clip0_906_453)">
                     <path
                       d="M26.6154 15L23 18.525L34.7436 30L23 41.475L26.6154 45L42 30L26.6154 15Z"
-                      fill="#0F1C2E"
+                      fill="var(--case-study-border-color)"
                     />
                   </g>
                   <defs>

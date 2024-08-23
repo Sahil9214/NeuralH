@@ -2,7 +2,7 @@
     --bl: #4750ff;
     --y:  linear-gradient(90deg, #203B60 0%, #4C648B 100%);
     ;
-    --w: #fff;
+    --w: var(--our-service-content-background-color);
   }
   
 
@@ -119,7 +119,8 @@
   .shape:after {
     width: 90%;
     height: 90%;
-    background: repeating-linear-gradient(to right, #fff, #fff 2px, var(--y) 2px, var(--y) 5px);
+    background: repeating-linear-gradient(to right,var(--our-service-content-background-color),var(--our-service-content-background-color)
+    , 2px, var(--y) 2px, var(--y) 5px);
     top: 5%;
     left: 5%;
     background-position: 20px 30px;
