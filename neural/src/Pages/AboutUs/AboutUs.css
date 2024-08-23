@@ -5,8 +5,8 @@
 .about_us_container{
   display: flex;
   justify-content: center;
-  color:#E0E0E0;
-  background: linear-gradient(90deg, #203B60 0%, #4C648B 100%);
+  color:var(--our-service-heading-color);
+  background: var(--background-color);
   height:650px;
   margin-top:0px;
   
@@ -30,7 +30,7 @@
     font-weight: 400;
     line-height: 72px;
     text-align: left;
-    color:rgba(224,224,224);
+    color:var( --about-us-our-team-color);
     
     
 }
@@ -41,7 +41,7 @@
     line-height: 52px;
     text-align: left;
     
-    color:#CEE7FE;
+    color:var( --About-us-component-subheading);
     
 
 
@@ -53,7 +53,7 @@
     font-weight: 400;
     line-height: 23.64px;
     text-align: left;
-    color:#ACC2EE;
+    color:var( --About-us-component-subText);
     margin-top: 20px;
     height: 50px;
 }
@@ -102,12 +102,12 @@
     font-weight: 400;
     line-height: 47.28px;
     text-align: left;
-    color:#4D658D;
+    color:var( --introduction-heading-color);
    
     }
 .owner_paragraph{
     font-size: 16px;
-    color:#1E3A5F;
+    color:var( --case-study-content-color);
    
     
 }
@@ -187,9 +187,9 @@
 }
 .btn_see_more{
     padding: 10px 30px;
-    color:#FFFF;
+    color:var(--our-service-content-background-color);
     font-weight: 600;
-    background: linear-gradient(90deg, #5592e8 0%, #799cd4 100%);
+    background:var(--background-color);
     border-radius: 10px;
     transition: border-radius .7s ease;
 }
@@ -226,7 +226,7 @@
         line-height: 25px;
         text-align: left;
         margin-top: 0px;
-        color:#CEE7FE
+        color:var(--About-us-component-subheading);
     }
     .about_us_our_team_description_context{
         font-size: 14px;

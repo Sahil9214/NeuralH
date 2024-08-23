@@ -11,12 +11,12 @@
  
   position: fixed;
   
-  background-color: #ffff;
+  background-color:var(--our-service-content-background-color);
   align-items: center;
 }
 
 .navbar a {
-  color: #374357;
+  color: var(--navbar-font-color);
 
 }
 .navbar_logo {
@@ -44,8 +44,8 @@
 
 
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  background-color: #fff;
-  background:linear-gradient(90deg, #203b60 0%, #4c648b 100%);  
+  background-color: var(--our-service-content-background-color);
+  background:var(--bakcground-color);  
 
   margin-top: -3px;
 
@@ -56,17 +56,17 @@
 }
 
 .menu li a {
-  color: #374357;
+  color: var(--navbar-font-color);
   font-size: 20px;
   text-decoration: none;
 }
 .menu.open li a{
-  color: #fff;
+  color:var(--our-service-content-background-color);
   font-size: 20px;
   text-decoration: none;
 }
 .menu li a:hover {
-  color: #acc2ee;
+  color:var(--navbar-menu-list-hover);
   font-size: 20px;
   text-decoration: none;
 }
@@ -83,7 +83,7 @@
 }
 
 .menu-toggle span {
-  background-color: #374357;
+  background-color: var(--navbar-font-color);
   height: 3px;
   width: 100%;
   display: block;
@@ -107,7 +107,7 @@
 .navbar .menu li:hover .line {
   width: 100%;
   margin-top: 19px;
-  border: 1px solid #374357;
+  border: 1px solid var(--navbar-font-color);
 }
 
 .line {
@@ -115,32 +115,32 @@
 }
 
 .navbar .menu li:nth-child(1) .line {
-  background-color: #374357;
+  background-color: var(--navbar-font-color);
   margin-top: 5px;
 }
 
 .navbar .menu li:nth-child(2) .line {
-  background-color: #374357;
+  background-color: var(--navbar-font-color);
 }
 
 .navbar .menu li:nth-child(3) .line {
-  background-color: #374357;
+  background-color: var(--navbar-font-color);
 }
 
 .navbar .menu li:nth-child(4) .line {
-  background-color: #374357;
+  background-color: var(--navbar-font-color);
 }
 
 .navbar .menu li:nth-child(5) .line {
-  background-color: #374357;
+  background-color: var(--navbar-font-color);
 }
 
 .navbar .menu li:nth-child(6) .line {
-  background-color: #374357;
+  background-color: var(--navbar-font-color);
 }
 
 .navbar .menu li:nth-child(7) .line {
-  background-color: #374357;
+  background-color: var(--navbar-font-color);
 }
 
 .Navbar_Tags {
@@ -204,14 +204,14 @@
     margin-top: 20px;
   }
   .menu li a {
-    color: #fff;
+    color: var(--our-service-content-background-color);
     font-size: 20px;
     text-decoration: none;
-    color: #374357;
+    color: var(--navbar-font-color);
     text-align: center;
   }
   .menu li a:hover {
-    color: #acc2ee;
+    color: var(--navbar-menu-list-hove);
     font-size: 20px;
     text-decoration: none;
   }
@@ -231,7 +231,7 @@
   .navbar_logo {
     width: 60%;
     height: auto;
-    /* border: 3px solid green; */
+
     margin-left: 7%;
   }
 }

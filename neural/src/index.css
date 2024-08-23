@@ -4,8 +4,24 @@
 :root{
   scroll-snap-type:y mandatory;
   scroll-padding-top:40px;
-  /* scroll-padding-bottom: -80px; */
+
   scroll-snap-stop: always;
+  --background-color:linear-gradient(90deg, #203B60 0%, #4C648B 100%);
+  --case-study-heading-color: #4D658D;
+  --case-study-border-color:#0F1C2E;
+  --case-study-content-color:#1E3A5F;
+  --our-service-heading-color:#E0E0E0;
+  --our-service-content-background-color:#fff;
+  --About-us-component-subheading:#CEE7FE;
+  --About-us-component-subText:#Acc2EE;
+  --About-us-button-border-text-color:rgb(172,194,238);
+  --introduction-heading-color:#4D658D;
+  --introduction-sub-heading:#1E3A5F;
+  --introudction-sub-text:rgb(55,67,87);
+  --navbar-menu-list-hover:#acc2ee;
+  --navbar-font-color: #374357;
+  --about-us-our-team-color:rgb(224,224,224);
+
 }
 
 
@@ -25,28 +41,28 @@ body {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ffff;
+  background-color:var(--our-service-content-background-color)
   
 }
 
 ::-webkit-scrollbar {
-  width: 8px; /* Width of the scrollbar */
+  width: 8px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  /* background:linear-gradient(120deg, #5be3ff, #66e5f6 30%, #bdf2b4 70%, #fffc83);  */
+ 
   background: #fff;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background:linear-gradient(90deg, #203B60 0%, #4C648B 100%)
+  background:var(--background-color)
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   ::-webkit-scrollbar-thumb:hover {
-    background: #004d40; /* Darker green scrollbar handle color on hover */
+    background: #004d40; 
   }
 }
