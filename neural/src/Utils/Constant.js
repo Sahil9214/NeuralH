@@ -22,6 +22,7 @@ const Constant = {
   Owner_Name2: "Amrit Anand",
   Owner_Name3: "Mohsin Hasan Khan",
   Owner_Name4: "Prasanna Kakhandaki",
+  Owner_Name5: "Samarth Gupta",
   //!EMPLOYEE NAME
   TEAM_MEMBER4: "Utkarsh Singhal",
   TEAM_MEMBER3: "Rushikesh Bhomale",
@@ -81,10 +82,11 @@ const Constant = {
 
   // !OWNER DESIGNATION
 
-  SANDEEP_DESIGNATION: "Chief Executive Officer",
-  AMRIT_DESIGNATION: "Chief Technology Officer",
+  SANDEEP_DESIGNATION: "CEO",
+  AMRIT_DESIGNATION: "CTO",
   MOSHIN_HASAN_KHAN_DESIGNATION: "Chief Scientist",
-  PRASANNA_KAKHANDAKI_DESIGNATION: "Chief Product Officer",
+  PRASANNA_KAKHANDAKI_DESIGNATION: "CPO",
+  SAMARTH_GUPTA_DESIGNATION: "HGM",
   SCROLL: "Scroll",
 };
 

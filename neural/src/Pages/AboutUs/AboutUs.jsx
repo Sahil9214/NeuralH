@@ -69,64 +69,28 @@ const AboutUSTeam = () => {
   return (
     <div>
       <Navbar showNavs={true} />
-      <div className="about_us_page">
-        <div className="about_us_container">
-          <div className="about_us_inner_container">
-            <div className="about_us_inner_container_content">
-              <p className="about_us_our_team">{Constant.OUR_TEAM}</p>
-              <p className="about_us_our_team_description">
-                {Constant.ABOUT_US_DESCRIPTION}
-              </p>
-              <p className="about_us_our_team_description_context">
-                {Constant.ABOUT_US_KNOW_MORE_DESCRIPTION}
-              </p>
-            </div>
-            <div className="owner" data-testid="owner">
-              {Owner.map((team, i) => (
-                <div key={i} className="owner_team">
-                  <img src={team.img} loading="lazy" alt={`${team.Linkedin}`} />
-                  <p className="team_member">{team.teamMember}</p>
-                  <div className="owner_desgination">
-                    <p className="owner_paragraph">{team.Designation}</p>
-                    <a href={team.Linkedin} target="_blank">
-                      <img
-                        style={{ cursor: "pointer" }}
-                        src={linkedin}
-                        alt="linkedin-img"
-                        className="owner-linkedin"
-                        loading="lazy"
-                      />
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
+      <div className="about">
+        <div className="about_container">
+          <div className="about1">
+            <h3 className="heading ">Our team</h3>
+            <h1 className="about-description">
+              We believe in the transformative power of technology to solve
+              complex problems, enhance human creativity, and drive forward
+              innovation in unprecedented ways.
+            </h1>
+            <h3 className="about-detail">
+              Our team consists of passionate AI researchers, data scientists,
+              engineers and visionaries dedicated to pushing the boundaries of
+              what's possible with AI.{" "}
+            </h3>
+          </div>
+          <div className="owner">
+            <OwnerDetails />
           </div>
         </div>
-        <div className="employees-container">
-          <div className="employees" data-testid="employees">
-            {Employees.map((team, i) => (
-              <div className="employees_team" key={i}>
-                <img src={`${team.img}`} loading="lazy" alt={team.teamMember} />
-                <p className="team_member">{team.teamMember}</p>
-                <div className="description_of_desgination">
-                  <p className="designation_paragraph">{team.Designation}</p>
-
-                  <a
-                    href={team.Linkedin}
-                    target="_blank"
-                    style={{ cursor: "pointer" }}
-                  >
-                    <img
-                      src={linkedin}
-                      alt="linkedin-img"
-                      className="owner-linkedin"
-                    />
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="about2">
+          {" "}
+          <EmployeeDetails />
         </div>
       </div>
       <footer className="footer_container" data-testid="footer">
@@ -254,6 +218,72 @@ function FooterLinks(props) {
       <p className="links_or_footer" style={{ color: props.color }}>
         {props.text}
       </p>
+    </div>
+  );
+}
+
+function OwnerDetails() {
+  return (
+    <div className="owner-container">
+      {Owner.map((el, i) => {
+        return (
+          <div key={i} className="owner-card">
+            <img
+              src={el.img}
+              alt={`${el.teamMember}${el.Linkedin}`}
+              className="owner-img"
+            />
+            <p className="teammember">{el.teamMember}</p>
+            <div className="owner-details">
+              <p className="designation">{el.Designation}</p>
+              <a
+                href={`${el.Linkedin}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={linkedin}
+                  alt="linkedin-img"
+                  className="linkedin-img"
+                />
+              </a>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+function EmployeeDetails() {
+  return (
+    <div className="employee">
+      {Employees.map((el, i) => {
+        return (
+          <div key={i} className="owner-card">
+            <img
+              src={el.img}
+              alt={`${el.teamMember}${el.Linkedin}`}
+              className="owner-img"
+            />
+            <p className="teammember">{el.teamMember}</p>
+            <div className="owner-details">
+              <p className="designation">{el.Designation}</p>
+              <a
+                href={`${el.Linkedin}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={linkedin}
+                  alt="linkedin-img"
+                  className="linkedin-img"
+                />
+              </a>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }

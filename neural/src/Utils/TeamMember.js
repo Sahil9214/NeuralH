@@ -10,6 +10,7 @@ import prasanna from "../Images/prasanna.png";
 import kushagra2 from "../Images/kushagra2.png";
 import amrit from "../Images/amrit_website.png";
 import Revant1 from "../Images/Revanth.png";
+import Samarth from "../Images/Samarth.jpg";
 export const Owner = [
   {
     teamMember: Constant.Owner_Name1,
@@ -38,7 +39,13 @@ export const Owner = [
     Designation: Constant.PRASANNA_KAKHANDAKI_DESIGNATION,
     img: prasanna,
     Linkedin: "https://www.linkedin.com/in/prasannapk/",
-    // img: "https://media.licdn.com/dms/image/D5603AQFNEFYFmh7LLg/profile-displayphoto-shrink_800_800/0/1686716285921?e=1720051200&v=beta&t=OdrueRGKd2c42nyOGQrrbuU6qeVz3wIjty0gdMqrbYY",
+    effect: "zoom-out",
+  },
+  {
+    teamMember: Constant.Owner_Name5,
+    Designation: Constant.SAMARTH_GUPTA_DESIGNATION,
+    img: Samarth,
+    Linkedin: "https://www.linkedin.com/in/samarth-gupta-iitk/",
     effect: "zoom-out",
   },
 ];
