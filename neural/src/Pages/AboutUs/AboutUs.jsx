@@ -86,126 +86,132 @@ const AboutUSTeam = () => {
           </div>
           <div className="owner">
             <OwnerDetails />
+            <footer className="footer_container" data-testid="footer">
+              <div className="footer_links_Logo">
+                <img
+                  alt="footer_neuralhq_logo"
+                  loading="lazy"
+                  src={logo}
+                  className="footer-logo-new"
+                />
+              </div>
+              <div className="footer_links_mainContainer">
+                <div className="footer_links_container">
+                  <div>
+                    <Link
+                      onClick={() =>
+                        smoothScrollTo(
+                          "#about",
+                          window.innerWidth < 400 ? -80 : -20
+                        )
+                      }
+                    >
+                      <FooterLinks
+                        text={Constant.ABOUT_US}
+                        color={GlobalStyle.blue3}
+                      />
+                    </Link>
+                    <Link
+                      onClick={() =>
+                        smoothScrollTo(
+                          "#services",
+                          window.innerWidth < 400 ? -840 : -20
+                          //740
+                        )
+                      }
+                    >
+                      <FooterLinks
+                        text={Constant.OUR_SERVICES}
+                        color={GlobalStyle.blue3}
+                      />
+                    </Link>
+                    <Link
+                      onClick={() =>
+                        smoothScrollTo(
+                          "#solution",
+                          window.innerWidth < 400 ? -280 : -20
+                        )
+                      }
+                    >
+                      <FooterLinks
+                        text={Constant.OUR_SOLUTIONS}
+                        color={GlobalStyle.blue3}
+                      />
+                    </Link>
+                  </div>
+                  <div>
+                    <Link
+                      onClick={() =>
+                        smoothScrollTo(
+                          "#casestudy",
+                          window.innerWidth < 400 ? -2400 : -20
+                        )
+                      }
+                    >
+                      <FooterLinks
+                        text={Constant.CASE_STUDIES}
+                        color={GlobalStyle.blue3}
+                        size={"18px"}
+                      />
+                    </Link>
+                    <Link to="/contact">
+                      <FooterLinks
+                        text={Constant.CONTACT_US}
+                        color={GlobalStyle.blue3}
+                        size={"18px"}
+                      />
+                    </Link>
+                    <Link to="/about">
+                      <FooterLinks
+                        text={Constant.OUR_TEAM}
+                        color={GlobalStyle.blue3}
+                      />
+                    </Link>
+                  </div>
+                </div>
+                <div className="follow_us_social_media_platform">
+                  <div className="footerlinks_components">
+                    <p
+                      style={{ color: GlobalStyle.blue3 }}
+                      className="Follow_us_on"
+                    >
+                      {Constant.FOLLOW_US_ON}
+                    </p>
+                    <div className="footer_logos">
+                      <a
+                        href="https://twitter.com/neuralhq"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src={twitter}
+                          alt="twitter"
+                          className="footer_social_media"
+                        />
+                      </a>
+                      <a
+                        href="https://www.linkedin.com/company/neuralhq/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src={linkedin}
+                          alt="linkedin"
+                          className="footer_social_media"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
           </div>
         </div>
-        <div className="about2">
+        {/* <div className="about2">
           {" "}
           <EmployeeDetails />
-        </div>
+        </div> */}
       </div>
-      <footer className="footer_container" data-testid="footer">
-        <div className="footer_links_Logo">
-          <img
-            alt="footer_neuralhq_logo"
-            loading="lazy"
-            src={logo}
-            className="footer-logo-new"
-          />
-        </div>
-        <div className="footer_links_mainContainer">
-          <div className="footer_links_container">
-            <div>
-              <Link
-                onClick={() =>
-                  smoothScrollTo("#about", window.innerWidth < 400 ? -80 : -20)
-                }
-              >
-                <FooterLinks
-                  text={Constant.ABOUT_US}
-                  color={GlobalStyle.blue3}
-                />
-              </Link>
-              <Link
-                onClick={() =>
-                  smoothScrollTo(
-                    "#services",
-                    window.innerWidth < 400 ? -840 : -20
-                    //740
-                  )
-                }
-              >
-                <FooterLinks
-                  text={Constant.OUR_SERVICES}
-                  color={GlobalStyle.blue3}
-                />
-              </Link>
-              <Link
-                onClick={() =>
-                  smoothScrollTo(
-                    "#solution",
-                    window.innerWidth < 400 ? -280 : -20
-                  )
-                }
-              >
-                <FooterLinks
-                  text={Constant.OUR_SOLUTIONS}
-                  color={GlobalStyle.blue3}
-                />
-              </Link>
-            </div>
-            <div>
-              <Link
-                onClick={() =>
-                  smoothScrollTo(
-                    "#casestudy",
-                    window.innerWidth < 400 ? -2400 : -20
-                  )
-                }
-              >
-                <FooterLinks
-                  text={Constant.CASE_STUDIES}
-                  color={GlobalStyle.blue3}
-                  size={"18px"}
-                />
-              </Link>
-              <Link to="/contact">
-                <FooterLinks
-                  text={Constant.CONTACT_US}
-                  color={GlobalStyle.blue3}
-                  size={"18px"}
-                />
-              </Link>
-              <Link to="/about">
-                <FooterLinks
-                  text={Constant.OUR_TEAM}
-                  color={GlobalStyle.blue3}
-                />
-              </Link>
-            </div>
-          </div>
-          <div className="follow_us_social_media_platform">
-            <div className="footerlinks_components">
-              <p style={{ color: GlobalStyle.blue3 }} className="Follow_us_on">
-                {Constant.FOLLOW_US_ON}
-              </p>
-              <div className="footer_logos">
-                <a
-                  href="https://twitter.com/neuralhq"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={twitter}
-                    alt="twitter"
-                    className="footer_social_media"
-                  />
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/neuralhq/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={linkedin}
-                    alt="linkedin"
-                    className="footer_social_media"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
@@ -257,37 +263,37 @@ function OwnerDetails() {
   );
 }
 
-function EmployeeDetails() {
-  return (
-    <div className="employee">
-      {Employees.map((el, i) => {
-        return (
-          <div key={i} className="owner-card">
-            <img
-              src={el.img}
-              alt={`${el.teamMember}${el.Linkedin}`}
-              className="owner-img"
-              loading="lazy"
-            />
-            <p className="teammember">{el.teamMember}</p>
-            <div className="owner-details">
-              <p className="designation">{el.Designation}</p>
-              <a
-                href={`${el.Linkedin}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={linkedin}
-                  alt="linkedin-img"
-                  className="linkedin-img"
-                  loading="lazy"
-                />
-              </a>
-            </div>
-          </div>
-        );
-      })}
-    </div>
-  );
-}
+// function EmployeeDetails() {
+//   return (
+//     <div className="employee">
+//       {Employees.map((el, i) => {
+//         return (
+//           <div key={i} className="owner-card">
+//             <img
+//               src={el.img}
+//               alt={`${el.teamMember}${el.Linkedin}`}
+//               className="owner-img"
+//               loading="lazy"
+//             />
+//             <p className="teammember">{el.teamMember}</p>
+//             <div className="owner-details">
+//               <p className="designation">{el.Designation}</p>
+//               <a
+//                 href={`${el.Linkedin}`}
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//               >
+//                 <img
+//                   src={linkedin}
+//                   alt="linkedin-img"
+//                   className="linkedin-img"
+//                   loading="lazy"
+//                 />
+//               </a>
+//             </div>
+//           </div>
+//         );
+//       })}
+//     </div>
+//   );
+// }

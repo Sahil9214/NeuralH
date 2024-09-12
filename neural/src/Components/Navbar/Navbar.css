@@ -174,7 +174,7 @@
 }
 
 /* Media Query for responsiveness */
-@media (max-width: 1124px) and (min-width: 320px) {
+@media (max-width: 1124px)  {
   .navbar .menu li {
     margin-top: 30px;
   }

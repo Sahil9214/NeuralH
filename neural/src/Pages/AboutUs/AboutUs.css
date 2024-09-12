@@ -4,7 +4,7 @@
 }
 
 .about_container {
-    display: flex;
+
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -14,31 +14,33 @@
 }
 
 .about1 {
-    width: 66.66vw;
+    width: 60vw;
+    margin-bottom: 15vw;
 }
 
 .heading {
-    font-size: 1.3vw;
+    font-size: 1vw;
     line-height: 6.4vh;
     color: #E0E0E0;
     font-family: Lato;
     font-family: 400;
+    font-family: Lato, sans-serif;
 }
 
 .about-description {
-    font-size: 3.48vw;
-    line-height: 7.8vh;
+    font-size: 2vw;
+    line-height: 2.5vw;
     color: #CEE7FE;
-    font-family: lato-regular;
+    font-family: Lato, sans-serif;
     font-family: 400;
 
 }
 
 .about-detail {
-    font-size: 1.16vw;
-    line-height: 3vh;
+    font-size: 1vw;
+    line-height: 1.8vw;
     margin-top: 2.85vh;
-    font-family: lato-regular;
+    font-family: Lato, sans-serif;
     font-family: 400;
     color: #ACC2EE;
 }
@@ -46,12 +48,9 @@
 
 .owner {
     position: absolute;
-    top: 80%;
+    top: 53%;
     height: 100vh;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
 }
 
@@ -77,6 +76,7 @@
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
+    object-position: top;
 }
 
 .teammember {
@@ -95,8 +95,8 @@
 }
 
 .linkedin-img {
-    width: 1.4vw;
-    height: 3vh;
+    width: 1.2vw;
+    height: 1.2vw;
 }
 
 .about2 {
@@ -120,9 +120,32 @@
 
 }
 
+.owner-card:nth-child(1) .teammember,
+.owner-card:nth-child(2) .teammember,
+.owner-card:nth-child(3) .teammember,
+.owner-card:nth-child(1) .designation,
+.owner-card:nth-child(2) .designation,
+.owner-card:nth-child(3) .designation {
+    color: #ffff;
+}
+
+
 @media screen and (max-width:1535px) and (min-width:1280px) {
+    .about1 {
+        width: 60vw;
+        margin-bottom: 20vw;
+    }
+    .about-detail {
+        font-size: 1.1vw;
+        line-height: 2.5vh;
+        margin-top: 2vh;
+        font-family: Lato, sans-serif;
+        font-family: 400;
+        color: #ACC2EE;
+    }
+
     .owner {
-        top: 70%
+        top: 52%
     }
 
     .designation {
@@ -139,90 +162,236 @@
         padding: 1.4vw 0px;
     }
 }
+
 @media screen and (max-width :1279px) and (min-width:1024px) {
-    .owner-card{
-        width: 25vw;
-        height: 34vw;
-   
+    .about1 {
+        width: 60vw;
+        margin-bottom: 20vw;
     }
-    .owner-container{
+
+    .heading {
+        font-size: 1.3vw;
+        line-height: 4vh;
+        color: #E0E0E0;
+        font-family: Lato;
+        font-family: 400;
+    }
+
+    .about-detail {
+        font-size: 1.5vw;
+        line-height: calc(4vh-.9vw);
+        margin-top: 2vh;
+        font-family: Lato, sans-serif;
+        font-family: 400;
+        color: #ACC2EE;
+    }
+
+    .owner-card {
+        width: 20vw;
+        height: 25vw;
+
+    }
+
+    .owner-card:nth-child(3) .teammember {
+        color: #4D658D;
+    }
+
+    .owner-card:nth-child(3) .designation {
+        color: rgba(30, 58, 95, 1);
+    }
+
+    .owner-container {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-    .owner-img{
-        height: 27vw;
+
+    .owner-img {
+        height: 20vw;
+        object-fit: cover;
     }
+
     .linkedin-img {
         width: 1vw;
         height: 1vw;
     }
-    .employee{
-        grid-template-columns: repeat(2,1fr);
-    } 
-    .designation {
-        font-size: 0.7vw;
+
+    .employee {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .about2{
+
+    .designation , .teammember {
+        font-size: 1.2vw;
+    }
+
+    .about2 {
         margin-top: 140vh;
     }
 }
 
-@media screen and (max-width :1023px ) and (min-width:768px){
-    .owner-card{
+@media screen and (max-width :1023px) and (min-width:768px) {
+    .about_container {
+        height: 100vh;
+    }
+
+    .about1 {
+        width: 60vw;
+        margin-bottom: 40vw;
+    }
+
+    .heading {
+        font-size: 1.5vw;
+        line-height: 6.4vh;
+        color: #E0E0E0;
+        font-family: Lato;
+        font-family: 400;
+    }
+
+    .about-description {
+        font-size: 3vw;
+        line-height:3.8vw;
+        color: #CEE7FE;
+        font-family: Lato, sans-serif;
+        font-family: 400;
+
+    }
+
+    .about-detail {
+        font-size: 1.5vw;
+        line-height: 2vw;
+        margin-top: 2vw;
+        font-family: Lato, sans-serif;
+        font-family: 400;
+        color: #ACC2EE;
+    }
+
+
+    .owner {
+        top: 52%
+    }
+
+    .owner-card {
         width: 25vw;
         height: 34vw;
-   
+
     }
-    .owner-container{
+
+    .owner-card:nth-child(3) .teammember {
+        color: #4D658D;
+    }
+
+    .owner-card:nth-child(3) .designation {
+        color: rgba(30, 58, 95, 1);
+    }
+
+    .owner-container {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-    .owner-img{
+
+    .owner-img {
         height: 27vw;
     }
+
     .linkedin-img {
         width: 1vw;
         height: 1vw;
     }
-    .employee{
-        grid-template-columns: repeat(2,1fr);
-    } 
-    .designation {
-        font-size: 0.7vw;
+
+    .employee {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .about2{
-        margin-top:90vw;
+
+    .designation {
+        font-size: 1.5vw;
+    }
+
+    .about2 {
+        margin-top: 90vw;
     }
 }
-@media screen and (max-width:767px) and (min-width:640px){
-    .owner-card{
+
+@media screen and (max-width:767px) and (min-width:640px) {
+    .about_container {
+        height: 95vh;
+    }
+
+    .about1 {
+        width: 60vw;
+        margin-bottom: 35vw;
+    }
+
+    .heading {
+        font-size: 1.5vw;
+        line-height: 6.4vh;
+        color: #E0E0E0;
+        font-family: Lato;
+        font-family: 400;
+    }
+
+    .about-description {
+        font-size: 3vw;
+        line-height: 4vh;
+        color: #CEE7FE;
+        font-family: Lato, sans-serif;
+        font-family: 400;
+
+    }
+
+    .about-detail {
+        font-size: 1.5vw;
+        line-height: 2.5vh;
+        margin-top: 2.85vh;
+        font-family: Lato, sans-serif;
+        font-family: 400;
+        color: #ACC2EE;
+    }
+
+    .owner {
+        top: 55%;
+    }
+
+    .owner-card {
         width: 25vw;
         height: 34vw;
-   
+
     }
-    .owner-container{
+
+    .owner-card:nth-child(3) .teammember {
+        color: #4D658D;
+    }
+
+    .owner-card:nth-child(3) .designation {
+        color: rgba(30, 58, 95, 1);
+    }
+
+    .owner-container {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-    .owner-img{
+
+    .owner-img {
         height: 27vw;
     }
+
     .linkedin-img {
         width: 1.5vw;
         height: 1.5vw;
     }
-    .employee{
-        grid-template-columns: repeat(2,1fr);
-    } 
-    .designation {
-        font-size:1.5vw;
+
+    .employee {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .about2{
+
+    .designation , .teammember {
+        font-size: 1.8vw;
+    }
+
+    /* .about2{
         margin-top:90vw;
-    }
+    } */
 }
 
-@media screen and (max-width:639px) and (min-width:320px){
+@media screen and (max-width:639px)  {
     .about_container {
         display: flex;
         justify-content: center;
@@ -232,58 +401,99 @@
         background: linear-gradient(90deg, #203B60 0%, #4C648B 100%);
         display: flex;
     }
-    .about1{
+
+    .about1 {
         width: 80vw;
-    
+        margin-top: 10vw;
     }
-    .heading{
+
+    .heading {
         font-size: 3vw;
         line-height: 3vh;
     }
-    .about-description{
-        font-size: 5.5vw;
-        line-height: 3.5vh;
+
+    .about-description {
+        font-size: 5vw;
+        line-height:calc(4vh-.9vw);
     }
-    .about-detail{
-        font-size: 3vw;
-        line-height: 2.2vh;
+
+    .about-detail {
+        font-size: 2.5vw;
+        line-height: calc(2.5vh-.9vw);
         margin-top: 2vh;
     }
+
     .owner {
         top: 60%;
     }
-    .owner-card{
+
+    .owner-card {
         width: 60vw;
-        height:60vw;
-   
+        height: 60vw;
+
     }
-    .owner-container{
+
+    .owner-card:nth-child(3) .teammember,
+    .owner-card:nth-child(2) .teammember,
+    .owner-card:nth-child(1) .teammember {
+        color: #4D658D;
+    }
+
+    .owner-card:nth-child(3) .designation, .owner-card:nth-child(2) .designation, .owner-card:nth-child(1) .designation {
+        color: rgba(30, 58, 95, 1);
+    }
+
+    .owner-container {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 15vw;
     }
-    .owner-img{
-        
+
+    .owner-img {
+
         height: 100%;
     }
+
     .linkedin-img {
         width: 3vw;
         height: 3vw;
     }
-    .employee{
-        grid-template-columns: repeat(1,1fr);
-        gap:15vw
-    } 
+
+    .employee {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15vw
+    }
+
     .teammember {
         font-size: 3.5vw;
     }
+
     .designation {
-        font-size:3vw;
+        font-size: 3vw;
     }
-    .about2{
-        margin-top:355vw;
+
+    .about2 {
+        margin-top: 355vw;
     }
-    .footer_container{
+
+    .footer_container {
         margin-top: 15vw;
+    }
+}
+@media screen and (max-width:470px){
+    .heading {
+        font-size: 3vw;
+        line-height: 3vh;
+    }
+
+    .about-description {
+        font-size: 5vw;
+        line-height:calc(3vh-.9vw);
+    }
+
+    .about-detail {
+        font-size:3vw;
+        line-height: calc(2vh-.9vw);
+        margin-top: 2vh;
     }
 }
