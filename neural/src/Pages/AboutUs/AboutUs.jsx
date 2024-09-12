@@ -232,6 +232,7 @@ function OwnerDetails() {
               src={el.img}
               alt={`${el.teamMember}${el.Linkedin}`}
               className="owner-img"
+              loading="lazy"
             />
             <p className="teammember">{el.teamMember}</p>
             <div className="owner-details">
@@ -245,6 +246,7 @@ function OwnerDetails() {
                   src={linkedin}
                   alt="linkedin-img"
                   className="linkedin-img"
+                  loading="lazy"
                 />
               </a>
             </div>
@@ -265,6 +267,7 @@ function EmployeeDetails() {
               src={el.img}
               alt={`${el.teamMember}${el.Linkedin}`}
               className="owner-img"
+              loading="lazy"
             />
             <p className="teammember">{el.teamMember}</p>
             <div className="owner-details">
@@ -278,6 +281,7 @@ function EmployeeDetails() {
                   src={linkedin}
                   alt="linkedin-img"
                   className="linkedin-img"
+                  loading="lazy"
                 />
               </a>
             </div>
