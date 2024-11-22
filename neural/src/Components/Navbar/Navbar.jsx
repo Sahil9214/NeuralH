@@ -169,7 +169,7 @@ const Navbar = ({ showNavs }) => {
                   <div className="line"></div>
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="#casestudy"
                   className="Navbar_Tags"
@@ -182,7 +182,7 @@ const Navbar = ({ showNavs }) => {
                   {Constant.CASE_STUDIES}
                   <div className="line"></div>
                 </Link>
-              </li>
+              </li> */}
             </>
           )}
 

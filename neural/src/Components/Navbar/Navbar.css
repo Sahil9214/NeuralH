@@ -193,6 +193,7 @@
     display: flex;
     height: 300px;
     padding: 0px 12px;
+    background:var(--background-color)
   }
   .menu-toggle {
     display: flex;
@@ -233,6 +234,9 @@
     height: auto;
 
     margin-left: 7%;
+  }
+  .Navbar_Tags{
+    color: white;
   }
 }
 
