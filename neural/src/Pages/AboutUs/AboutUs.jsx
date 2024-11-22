@@ -2,15 +2,16 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React, { useEffect } from "react";
 import "./AboutUs.css";
-import Constant from "../../Utils/Constant";
-import { Owner, Employees } from "../../Utils/TeamMember";
+
+import { Owner } from "../../Utils/TeamMember";
 import linkedin from "../../Images/linkedin.png";
 import Navbar from "../../Components/Navbar/Navbar";
-import GlobalStyle from "../../Utils/color";
-import { Link, useLocation } from "react-router-dom";
-import logo from "../../Images/LogoFooter.png";
-import twitter from "../../Images/twitter1.png";
 
+import { useLocation } from "react-router-dom";
+
+import twitter from "../../Images/twitter1.png";
+import Infinity from "../../Images/Infinitylogo.png";
+import companyLogo from "../../Images/About-footer-logo.png";
 const AboutUSTeam = () => {
   const { pathname } = useLocation();
 
@@ -86,147 +87,15 @@ const AboutUSTeam = () => {
           </div>
           <div className="owner">
             <OwnerDetails />
-            <footer className="footer_container" data-testid="footer">
-              <div className="footer_links_Logo">
-                <img
-                  alt="footer_neuralhq_logo"
-                  loading="lazy"
-                  src={logo}
-                  className="footer-logo-new"
-                />
-              </div>
-              <div className="footer_links_mainContainer">
-                <div className="footer_links_container">
-                  <div>
-                    <Link
-                      onClick={() =>
-                        smoothScrollTo(
-                          "#about",
-                          window.innerWidth < 400 ? -80 : -20
-                        )
-                      }
-                    >
-                      <FooterLinks
-                        text={Constant.ABOUT_US}
-                        color={GlobalStyle.blue3}
-                      />
-                    </Link>
-                    <Link
-                      onClick={() =>
-                        smoothScrollTo(
-                          "#services",
-                          window.innerWidth < 400 ? -840 : -20
-                          //740
-                        )
-                      }
-                    >
-                      <FooterLinks
-                        text={Constant.OUR_SERVICES}
-                        color={GlobalStyle.blue3}
-                      />
-                    </Link>
-                    <Link
-                      onClick={() =>
-                        smoothScrollTo(
-                          "#solution",
-                          window.innerWidth < 400 ? -280 : -20
-                        )
-                      }
-                    >
-                      <FooterLinks
-                        text={Constant.OUR_SOLUTIONS}
-                        color={GlobalStyle.blue3}
-                      />
-                    </Link>
-                  </div>
-                  <div>
-                    <Link
-                      onClick={() =>
-                        smoothScrollTo(
-                          "#casestudy",
-                          window.innerWidth < 400 ? -2400 : -20
-                        )
-                      }
-                    >
-                      <FooterLinks
-                        text={Constant.CASE_STUDIES}
-                        color={GlobalStyle.blue3}
-                        size={"18px"}
-                      />
-                    </Link>
-                    <Link to="/contact">
-                      <FooterLinks
-                        text={Constant.CONTACT_US}
-                        color={GlobalStyle.blue3}
-                        size={"18px"}
-                      />
-                    </Link>
-                    <Link to="/about">
-                      <FooterLinks
-                        text={Constant.OUR_TEAM}
-                        color={GlobalStyle.blue3}
-                      />
-                    </Link>
-                  </div>
-                </div>
-                <div className="follow_us_social_media_platform">
-                  <div className="footerlinks_components">
-                    <p
-                      style={{ color: GlobalStyle.blue3 }}
-                      className="Follow_us_on"
-                    >
-                      {Constant.FOLLOW_US_ON}
-                    </p>
-                    <div className="footer_logos">
-                      <a
-                        href="https://twitter.com/neuralhq"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <img
-                          src={twitter}
-                          alt="twitter"
-                          className="footer_social_media"
-                        />
-                      </a>
-                      <a
-                        href="https://www.linkedin.com/company/neuralhq/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <img
-                          src={linkedin}
-                          alt="linkedin"
-                          className="footer_social_media"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </footer>
+            <AboutFooter />
           </div>
         </div>
-        {/* <div className="about2">
-          {" "}
-          <EmployeeDetails />
-        </div> */}
       </div>
     </div>
   );
 };
 
 export default AboutUSTeam;
-
-function FooterLinks(props) {
-  return (
-    <div className="footer_text_links">
-      <p className="links_or_footer" style={{ color: props.color }}>
-        {props.text}
-      </p>
-    </div>
-  );
-}
 
 function OwnerDetails() {
   return (
@@ -263,37 +132,97 @@ function OwnerDetails() {
   );
 }
 
-// function EmployeeDetails() {
-//   return (
-//     <div className="employee">
-//       {Employees.map((el, i) => {
-//         return (
-//           <div key={i} className="owner-card">
-//             <img
-//               src={el.img}
-//               alt={`${el.teamMember}${el.Linkedin}`}
-//               className="owner-img"
-//               loading="lazy"
-//             />
-//             <p className="teammember">{el.teamMember}</p>
-//             <div className="owner-details">
-//               <p className="designation">{el.Designation}</p>
-//               <a
-//                 href={`${el.Linkedin}`}
-//                 target="_blank"
-//                 rel="noopener noreferrer"
-//               >
-//                 <img
-//                   src={linkedin}
-//                   alt="linkedin-img"
-//                   className="linkedin-img"
-//                   loading="lazy"
-//                 />
-//               </a>
-//             </div>
-//           </div>
-//         );
-//       })}
-//     </div>
-//   );
-// }
+function AboutFooter() {
+  return (
+    <footer
+      className="max-w-8xl mx-auto px-4"
+      style={{
+        padding: `${window.innerWidth < 768 ? "45px 0 10px" : ""}`,
+        margin: `${window.innerWidth < 768 ? "10vh 0" : ""}`,
+        background: "var(--background-color)",
+      }}
+    >
+      <div className="    max-w-screen-2xl mx-auto">
+        {/* White Container */}
+        <div className="rounded-lg p-6 mb-2">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            {/* Logo */}
+            <div className="flex items-center flex-col">
+              <div className="flex flex-row gap-3 justify-center items-center">
+                <img src={Infinity} alt="Infinity Logo" />
+                <img src={companyLogo} alt="neuralHQ" />
+              </div>
+              <div
+                className={`flex flex-row gap-1 mt-4 border-4 border-red-400 text-white ${
+                  window.innerWidth < 768
+                    ? "text-center justify-center gap-3"
+                    : ""
+                }`}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  className="w-6 h-6"
+                >
+                  <path
+                    d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z"
+                    stroke="#64748B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span className="ml-2">contact@neuralhq.ai</span>
+              </div>
+            </div>
+
+            {/* Email */}
+
+            {/* Social Icons */}
+            <div className="flex space-x-4">
+              <a
+                href="https://twitter.com/neuralhq"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-opacity hover:opacity-80"
+              >
+                <img
+                  src={twitter}
+                  alt="Twitter"
+                  className="w-8 h-8 object-contain"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/neuralhq/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-opacity hover:opacity-80"
+              >
+                <img
+                  src={linkedin}
+                  alt="LinkedIn"
+                  className={`object-contain ${
+                    window.screenWidth < 768 ? "w-5 h-5" : "w-8 h-8"
+                  }`}
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Copyright */}
+        <div
+          className={`text-center text-sm flex justify-center items-center h-10 border-t border-gray-300 ${
+            window.innerWidth < 768 ? "pt-6" : ""
+          }`}
+          style={{ borderTop: "1px solid rgb(100 116 139)" }}
+        >
+          <p className="text-white">
+            &copy; {new Date().getFullYear()} neuralhq.ai. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}

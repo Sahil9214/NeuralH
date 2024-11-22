@@ -1,247 +1,237 @@
 .contact_us_container {
-    display: flex;
-    padding: 40px 70px;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-    margin-top: 30px;
+  display: flex;
+  padding: 40px 70px;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  margin-top: 30px;
 }
 
 .input_box_contact_area {
-    text-align: center; /* Center text horizontally */
+  text-align: center; /* Center text horizontally */
 }
 
 .contact_us_heading {
-    font-family: Lato;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 28.8px;
-    text-align: left;
-    color: #4D658D;
-    padding-bottom: 15px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+  color: #4d658d;
+  padding-bottom: 15px;
 }
 
 input {
-    width: 400px;
-    height: 30px;
-    gap: 0px;
-    border: 1px solid #374357;
+  width: 400px;
+  height: 30px;
+  gap: 0px;
+  border: 1px solid #374357;
 }
 
 textarea {
-    width: 400px;
-    height: 200px;
-    top: 644px;
-    left: 120px;
-    font-size: 16px;
-    border: 1px solid #374357;
+  width: 400px;
+  height: 200px;
+  top: 644px;
+  left: 120px;
+  font-size: 16px;
+  border: 1px solid #374357;
 }
 
 ::placeholder {
-    color: #e0e0e0;
-    
-    font-size: 14px; 
+  color: #e0e0e0;
+
+  font-size: 14px;
 }
 
 input::placeholder,
 textarea::placeholder {
-    color: #E0E0E0; 
-    text-indent: .5em; 
-    font-family: Lato, Arial, sans-serif;
+  color: #e0e0e0;
+  text-indent: 0.5em;
+  font-family: Lato, Arial, sans-serif;
 }
-input:placeholder-shown  ,textarea:placeholder-shown {
-    padding-left: 1em;
-} 
+input:placeholder-shown,
+textarea:placeholder-shown {
+  padding-left: 1em;
+}
 textarea::placeholder {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .btn_contact_us {
-    width: 200px;
-    height: 40px;
-    margin: 0px;
-    background-color: #FFFFFF;
-    border: 1px solid #0F1C2E;
-    cursor: pointer;
-    margin-left: -50%;
+  width: 200px;
+  height: 40px;
+  margin: 0px;
+  background-color: #ffffff;
+  border: 1px solid #0f1c2e;
+  cursor: pointer;
+  margin-left: -50%;
 }
 
 .address {
-    text-align: right;
-    margin-top: 4px;
-    font-family: Lato;
-    font-weight: 400;
-    font-size: 14px;
+  text-align: right;
+  margin-top: 4px;
+
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .embeded_map {
-    width: 600px;
-    height: 280px;
+  width: 600px;
+  height: 280px;
 }
 
 .contact_us_address_map {
-    height: 400px;
+  height: 400px;
 }
 
 .mobile_number_contact_us {
-    text-align: right;
-    margin-top: 4px;
-    font-family: Lato;
-    font-weight: 400;
-    font-size: 14px;
+  text-align: right;
+  margin-top: 4px;
+
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .input_group {
-    position: relative;
+  position: relative;
 }
 
 .error {
-    border: 1px solid red;
+  border: 1px solid red;
 }
 
 .error_mark {
-    color: red;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+  color: red;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .error_mark_textArea {
-    color: red;
-    position: absolute;
-    right: 10px;
+  color: red;
+  position: absolute;
+  right: 10px;
 }
 
 .vibrate {
-    animation: vibrate 0.5s linear infinite;
+  animation: vibrate 0.5s linear infinite;
 }
 
 @keyframes vibrate {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-2px); }
-    50% { transform: translateX(2px); }
-    75% { transform: translateX(-2px); }
-    100% { transform: translateX(0); }
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .btn_contact_us {
-    margin: auto;
+  margin: auto;
 }
 /* ! Footer Part */
 .footer_container1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 123px;
-    background: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 123px;
+  background: var(--background-color);
 }
 
 .footer_links_Logo1 {
-    display: flex;
-    align-items: center;
-    width: 40vw;
- 
-    height: auto
-    
-}
-.footer_links_Logo1 img{
-   height: auto;
-   width: 35%;
+  display: flex;
+  align-items: center;
+  width: 40vw;
 
+  height: auto;
+}
+.footer_links_Logo1 img {
+  height: auto;
+  width: 35%;
 }
 .footer_links_mainContainer1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 60vw;    
-    height: 125px;
-    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60vw;
+  height: 125px;
 }
 
 .footer_links_container1 {
-    display: flex;
-    justify-content: center;   
-    height: 100%;
-    gap: 150px; /* Adjust the gap as needed */
-
-    
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  gap: 150px; /* Adjust the gap as needed */
 }
 
 .footer_links_container1 > div {
-    display: flex;
-    flex-direction: column;
-    margin-right: auto; /* Push divs to the left */  
-    justify-content: space-between;
-
+  display: flex;
+  flex-direction: column;
+  margin-right: auto; /* Push divs to the left */
+  justify-content: space-between;
 }
-.footer_logos1{
-   
-    display: flex;
-    justify-content: space-around; 
-    align-items: center; 
-    margin-top: 15px;
-    
+.footer_logos1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
 }
 
 .footer_links_container1 a {
-    text-decoration: none;
-    list-style: none;
+  text-decoration: none;
+  list-style: none;
 }
 
-
-
-.follow_us_social_media_platform1{
-    display: flex;
-    align-items: center;
-    height: 150px;
-    justify-content: space-between;
- 
+.follow_us_social_media_platform1 {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  justify-content: space-between;
 }
 .footer_social_media1 {
-    width: 35px;
-    height: 35px;
-    
+  width: 35px;
+  height: 35px;
 }
 
 .links_or_footer1 {
-    font-size: 18px;
-    line-height: 22px;
-    
-    
-    
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .Follow_us_on1 {
-    font-size: 18px;
-    line-height: 22px;
+  font-size: 18px;
+  line-height: 22px;
 }
 
-@media screen and (max-width:1124px ) and (min-width:768px){
-    .contact-matter{
-        height: 100%;
-    }
-    .contact_us_container{
+@media screen and (max-width: 1124px) and (min-width: 768px) {
+  .contact-matter {
+    height: 100%;
+  }
+  .contact_us_container {
     flex-direction: column;
     padding: 40px 30px;
     justify-content: space-between;
- 
-  
-    } 
-    input{
+  }
+  input {
     width: 80%;
     height: 30px;
     top: 344px;
     left: 120px;
     gap: 0px;
-    
-   
-    margin-top: 20px;   
-    border:1px solid #374357;
-    
-    
-    }
-    textarea{
+
+    margin-top: 20px;
+    border: 1px solid #374357;
+  }
+  textarea {
     margin-top: 20px;
     width: 80%;
     height: 200px;
@@ -249,191 +239,160 @@ textarea::placeholder {
     left: 120px;
     gap: 0px;
     border: 1px 0px 0px 0px;
-   
-    
-    }
-    .embeded_map{
-        width:90%;
-        height:240px;
-        margin: auto;
-    }
-    .address{
-        text-align: left;
-        font-size: 18px;
-        font-family: Lato;
-    }
-    .mobile_number_contact_us{
-        text-align: left;
-    }
-    .contact_us_container {
-        flex-direction: column;
-        padding: 40px 30px;
-        justify-content: space-between;
-    }
+  }
+  .embeded_map {
+    width: 90%;
+    height: 240px;
+    margin: auto;
+  }
+  .address {
+    text-align: left;
+    font-size: 18px;
+  }
+  .mobile_number_contact_us {
+    text-align: left;
+  }
+  .contact_us_container {
+    flex-direction: column;
+    padding: 40px 30px;
+    justify-content: space-between;
+  }
 
-    .input_box_contact_area {
-        text-align: center; /* Center text horizontally */
-    }
+  .input_box_contact_area {
+    text-align: center; /* Center text horizontally */
+  }
 
-    .btn_contact_us {
-        width: 200px;
-        height: 40px;
-        margin: 20px auto; /* Center the button horizontally */
-        background-color: #FFFFFF;
-        border:1px solid #0F1C2E;
-        cursor:pointer;
-    }
+  .btn_contact_us {
+    width: 200px;
+    height: 40px;
+    margin: 20px auto; /* Center the button horizontally */
+    background-color: #ffffff;
+    border: 1px solid #0f1c2e;
+    cursor: pointer;
+  }
 }
-@media screen and (max-width:768px ) {
-    .contact-matter{
-        height: 100%;
-    }
-    .contact_us_container{
-        flex-direction: column;
-        padding: 20px 30px;
-        justify-content: space-between; 
-        height :60%
-       
-        
-      } 
-      .input_box_contact_area{
+@media screen and (max-width: 768px) {
+  .contact-matter {
+    height: 100%;
+  }
+  .contact_us_container {
+    flex-direction: column;
+    padding: 20px 30px;
+    justify-content: space-between;
+    height: 60%;
+  }
+  .input_box_contact_area {
+    width: 90%;
+  }
 
-        width: 90%;
-      }
-     
-    input{
-        width: 100%;
-        margin: auto;
-        height: 30px;
-        margin: auto;
-        gap: 0px;
-        border: 1px 0px 0px 0px;
-       
-        margin-top: 20px;
-        border:1px solid #374357;
-        
-        
-        }
-    textarea{
-        margin-top: 20px;
-        width: 100%;
-        height: 200px;
-        top: 644px;
-        left: 120px;
-        gap: 0px;
-        border:1px solid #374357;
-       
-        
-        }
-    .embeded_map{
-            width:90%;
-            height:250px!important;
-            margin: auto;
-        }
-    .address{
-            text-align: left;
-        }
-    .mobile_number_contact_us{
-            text-align: left;
-        }
-        .input_box_contact_area{
-            margin-top: 40px;
-    
-           
-        }
-    .contact_us_heading{
-        margin-left: 10px;
-    }
-        .contact_us_address_map{
-            margin: auto;
-            
-            width:100%;
-            margin-top: 30px;
-            
-        }
-        .btn_contact_us{
-            margin: auto;
-        }
-        .footer_container1{
-            padding: 0px 10px;
-            height: auto;
-         
-       
-           
-        }
-        .footer_links_Logo1{
-            margin: auto;
-            width: 90vw;
-           
-           
-        }
-        .footer-logo-new1{
-            margin: auto;
-            margin-top: 5px;
-          
-        }
-        .footer_container1{
-            flex-direction: column;
-        }
-        .footer_links_mainContainer1{
-            flex-direction: column;
-            height:auto;
-          
-            width: 90vw;
-          
-        }
-        .footer_links_container1{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 90%;
-           justify-content: space-around;
-            /* align-items: flex-end; */
-            gap: 0px;
-            
-          
-           
-           
-        }
-    
-       
-       
-        .footer_text_links1{
-            margin-top: 10px;
-          
-          
-        }
-      
-       
-        .footer_links_container1 div:nth-child(2){
-            
-        
-            height: 100%;
-            margin: 0px;
-        }
-       
-        .footer_links_container1 div:nth-child(1)  .footer_text_links1 > .links_or_footer1{
-            text-align:left;
-            font-size: 16px;
-            line-height: 24px;
-            width: auto;
-       
-           
-        }
-        .footer_links_container1 > div:nth-child(2) .footer_text_links1 >.links_or_footer1{
-            text-align:left!important;
-            font-size: 16px;
-            line-height: 24px;
-           
-        }
-        .follow_us_social_media_platform1{
-            
-            height: 100px;
-            
-        }
-        .Follow_us_on1{
-            font-size: 18px;
-            line-height: 24px;
-        }
-    
+  input {
+    width: 100%;
+    margin: auto;
+    height: 30px;
+    margin: auto;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+
+    margin-top: 20px;
+    border: 1px solid #374357;
+  }
+  textarea {
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    top: 644px;
+    left: 120px;
+    gap: 0px;
+    border: 1px solid #374357;
+  }
+  .embeded_map {
+    width: 90%;
+    height: 250px !important;
+    margin: auto;
+  }
+  .address {
+    text-align: left;
+  }
+  .mobile_number_contact_us {
+    text-align: left;
+  }
+  .input_box_contact_area {
+    margin-top: 40px;
+  }
+  .contact_us_heading {
+    margin-left: 10px;
+  }
+  .contact_us_address_map {
+    margin: auto;
+
+    width: 100%;
+    margin-top: 30px;
+  }
+  .btn_contact_us {
+    margin: auto;
+  }
+  .footer_container1 {
+    padding: 0px 10px;
+    height: auto;
+  }
+  .footer_links_Logo1 {
+    margin: auto;
+    width: 90vw;
+  }
+  .footer-logo-new1 {
+    margin: auto;
+    margin-top: 5px;
+  }
+  .footer_container1 {
+    flex-direction: column;
+  }
+  .footer_links_mainContainer1 {
+    flex-direction: column;
+    height: auto;
+
+    width: 90vw;
+  }
+  .footer_links_container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    justify-content: space-around;
+    /* align-items: flex-end; */
+    gap: 0px;
+  }
+
+  .footer_text_links1 {
+    margin-top: 10px;
+  }
+
+  .footer_links_container1 div:nth-child(2) {
+    height: 100%;
+    margin: 0px;
+  }
+
+  .footer_links_container1
+    div:nth-child(1)
+    .footer_text_links1
+    > .links_or_footer1 {
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    width: auto;
+  }
+  .footer_links_container1
+    > div:nth-child(2)
+    .footer_text_links1
+    > .links_or_footer1 {
+    text-align: left !important;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .follow_us_social_media_platform1 {
+    height: 100px;
+  }
+  .Follow_us_on1 {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

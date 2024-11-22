@@ -153,7 +153,7 @@ const Home = () => {
         <AboutUsComponent />
         <GenerativeAi />
         <OurService />
-        <CaseStudy />
+        {/* <CaseStudy /> */}
         <Footer />
       </div>
     </>

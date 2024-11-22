@@ -3,7 +3,8 @@ const GlobalStyle = {
   blue1: "#1E3A5F",
 
   blue2: "#4D658D",
-  blue3: "#CEE7FE",
+  //blue3: "#CEE7FE",
+  blue3: "#374151",
   black1: "#374357",
   black2: "#0F1C2E",
   ABOUT_US_BACKGROUND_COLOR: "#203B60",
