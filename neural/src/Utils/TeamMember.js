@@ -3,7 +3,7 @@ import Constant from "./Constant";
 import Deependra from "../Images/Deependra.jpg";
 import Jhanvi from "../Images/Janhavi_Singh.png";
 import Moshin from "../Images/Moshin.png";
-import utkarsh from "../Images/utkarshImage.png";
+import utkarsh from "../Images/utkarsh_neuralhq_photo.jpg";
 import sandeep from "../Images/Sandeep.png";
 import rushikesh from "../Images/rushikesh.png";
 import prasanna from "../Images/prasanna.png";
