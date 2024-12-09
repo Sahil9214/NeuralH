@@ -1,17 +1,17 @@
 import Constant from "./Constant";
 
 import Deependra from "../Images/Deependra.jpg";
-import Jhanvi from "../Images/Janhavi_Singh.png";
-import Moshin from "../Images/Moshin.png";
+import Jhanvi from "../Images/janhavi-neuralhq-t-shirt.jpg";
+import Moshin from "../Images/mohsin-neuralhq-t-shirt.jpg";
 import utkarsh from "../Images/utkarsh_neuralhq_photo.jpg";
-import sandeep from "../Images/Sandeep.png";
+import sandeep from "../Images/sandeep-neuralhq-t-shirt.jpg";
 import rushikesh from "../Images/rushikesh.png";
 import prasanna from "../Images/prasanna.png";
 import kushagra2 from "../Images/kushagra2.png";
-import amrit from "../Images/amrit_website.png";
-import Revant1 from "../Images/Revanth.png";
-import Samarth from "../Images/Samarth.jpg";
-import janhaviCopy from "../Images/Janhavi_Singh_copy.jpg";
+import amrit from "../Images/amrit-neuralha-t-shrit.jpg";
+import Revant1 from "../Images/revant-neuralhq-t-shirt.jpg";
+import Samarth from "../Images/samarth-neuralhq-t-shirt.jpg";
+import janhaviCopy from "../Images/janhavi-neuralhq-t-shirt.jpg";
 export const Owner = [
   {
     teamMember: Constant.Owner_Name1,
