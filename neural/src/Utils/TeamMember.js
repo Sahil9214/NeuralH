@@ -5,7 +5,7 @@ import Jhanvi from "../Images/janhavi-neuralhq-t-shirt.jpg";
 import Moshin from "../Images/mohsin-neuralhq-t-shirt.jpg";
 import utkarsh from "../Images/utkarsh_neuralhq_photo.jpg";
 import sandeep from "../Images/sandeep-neuralhq-t-shirt.jpg";
-import rushikesh from "../Images/rushikesh.png";
+import rushikesh from "../Images/rushikesh-neuralhq-t-shirt.jpg";
 import prasanna from "../Images/prasanna.png";
 import kushagra2 from "../Images/kushagra2.png";
 import amrit from "../Images/amrit-neuralha-t-shrit.jpg";
